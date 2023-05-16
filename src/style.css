@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #050000;
+    background: url(Ghiblipedia.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    background-position: center;
+  }
+  
+  h1 {
+    background-color: #e1fb23;
+    text-align: left;
+  }
+  
+  .movie {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .movie img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    transform: scale(1.5);
+    background-color: #e1fb23;
+  }
+  
