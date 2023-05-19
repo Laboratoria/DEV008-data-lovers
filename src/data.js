@@ -1,9 +1,9 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
+export const database = () => {
   return 'example';
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+// export const anotherExample = () => {
+//  return 'OMG';
+// };
