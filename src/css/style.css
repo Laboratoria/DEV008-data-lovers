@@ -410,12 +410,12 @@ body {
   height: 15%;
   width: 10%;
   display:flex;
-  -ms-flex-item-align: center;
+
 }
 
 .wrapper{
 	width: 100%;
-	/*margin-top: 100px;*/
+	margin-top: 100px;
 	background: #fff;
 	padding: 30px 0;
 }
@@ -430,9 +430,18 @@ body {
 	margin-bottom: 15px;
 }
 
+.nombre{
+	font-family: "Open sans";
+	font-weight: 600px;
+	font-weight: bolder;
+
+  align-self: center;
+  text-align: center;
+}
 .testimonial-client img{
 	width: 120px;
 	margin:auto;
+  text-align: center;
 }
 
 .client-name{
