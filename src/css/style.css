@@ -409,6 +409,8 @@ body {
 #Test-img{
   height: 15%;
   width: 10%;
+  display:flex;
+  -ms-flex-item-align: center;
 }
 
 .wrapper{
