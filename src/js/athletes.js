@@ -1,20 +1,17 @@
-export default {
-  "games": "Olympic Games",
-  "year": 2016,
-  "season": "summer",
-  "city": "Rio de Janeiro",
-  "athletes": [
+
+  const athletes = [
+
     {
-      "name": "Giovanni Abagnale",
-      "gender": "M",
-      "height": "198",
+      "name": "Giovanni Abagnale", /**/
+      "gender": "M", /***/
+      "height": "198",/*heightMa*/
       "weight": "90",
-      "sport": "Rowing",
-      "team": "Italy",
+      "sport": "Rowing",/***/
+      "team": "Italy",/***/
       "noc": "ITA",
       "age": 21,
-      "event": "Rowing Men's Coxless Pairs",
-      "medal": "Bronze"
+      "event": "Rowing Men's Coxless Pairs",/***/
+      "medal": "Bronze" /**/
     },
     {
       "name": "Patimat Abakarova",
@@ -24281,4 +24278,4 @@ export default {
       "medal": "Bronze"
     }
   ]
-}
+

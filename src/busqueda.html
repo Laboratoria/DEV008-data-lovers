@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
 
   </head>
 
@@ -63,94 +67,111 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
+      <h1>Buscador de Atletas que participaron en Rio 2016</h1>
 
       <div class="content">
 
         <form id="buscador">
           <div class="row">
-              <div class="four columns">
-                  <label for="genero">Genero</label>
-                  <select class="u-full-width" id="genero">
-                      <option value="">Seleccione</option>
-                      <option value="Femenino">Femenino</option>
-                      <option value="Masculino">Masculino</option>
-                   </select>
+
+                          <!-- GENERO -->
+                        <div class="three columns">
+                            <label for="gender">Genero</label>
+                                <select class="u-full-width" id="gender">
+                                      <option value="">Seleccione</option>
+                                      <option value="Femenino">F</option>
+                                      <option value="Masculino">M</option>
+                                </select>
+                        </div>
+                         <!-- NOMBRE -->
+                              <div class="three columns">
+                                  <label for="name">Nombre</label>
+                                      <select class="u-full-width" id="name">
+                                            <option value="">Seleccione</option>
+                                      </select>
+                              </div>
+
+                          <!--- DEPORTE -->
+                          <div class="three columns">
+                              <label for="sport">Deporte</label>
+                                  <select class="u-full-width" id="sport">
+                                        <option value="">Seleccione</option>
+                                  </select>
+                          </div>
+
+                        <!--- MEDALLA -->
+                        <div class="three columns">
+                            <label for="medal">Medalla</label>
+                              <select class="u-full-width" id="medal">
+                                    <option value="">Seleccione</option>
+                                    <option value="Gold">Oro</option>
+                                    <option value="Silver">Plata</option>
+                                    <option value="Bronze">Bronce</option>
+                              </select>
+                        </div>
+
+                        <!--- EQUIPO -->
+                        <div class="three columns">
+                          <label for="team">Equipo</label>
+                          <select class="u-full-width" id="team">
+                          <option value="">Seleccione</option>
+
+                        </select>
+                       </div>
+                       <!--- EVENTO -->
+
+                      <div class="three columns">
+                        <label for="event">Evento</label>
+                        <select class="u-full-width" id="event">
+                                <option value="">Seleccione</option>
+                        </select>
+                      </div>
+               <!--- MAXIMOS Y MÍNIMOS -->
+              <!--- MAXIMOS Y MÍNIMOS  ALTURA-->
+
+                      <div class="three columns">
+                        <label for="heightMa">Altura (Max) </label>
+                        <select class="u-full-width" id="heightMa">
+                                <option value="">Seleccione</option>
+
+                        </select>
+                    </div>
+
+                    <div class="three columns">
+                      <label for="heightMi">Altura (Min) </label>
+                      <select class="u-full-width" id="heightMi">
+                              <option value="">Seleccione</option>
+
+                      </select>
+                  </div>
+
               </div>
 
-              <div class="four columns">
-                  <label for="medalla">Medalla</label>
-                  <select class="u-full-width" id="medalla">
-                      <option value="">Seleccione</option>
-                      <option value="gold">gold</option>
-                      <option value="silver">silver</option>
-                      <option value="bronze">bronze</option>
 
-                  </select>
-              </div>
-
-              <div class="four columns">
-                <label for="deporte">Deporte</label>
-                <select class="u-full-width" id="deporte">
-                    <option value="">Seleccione</option>
-                    <option value="xxxx">xxx</option>
-
-                </select>
             </div>
 
-              <div class="four columns">
-                  <label for="equipo">Equipo</label>
-                  <select class="u-full-width" id="equipo">
-                          <option value="">Seleccione</option>
-                          <option value="xxxxx">xxxx</option>
 
-                  </select>
-              </div>
-              <div class="three columns">
-                  <label for="maximo">Precio Max</label>
-                  <select class="u-full-width" id="maximo">
-                          <option value="">Seleccione</option>
-                          <option value="20000">20,000</option>
-                          <option value="30000">30,000</option>
-                          <option value="40000">40,000</option>
-                          <option value="50000">50,000</option>
-                          <option value="60000">60,000</option>
-                          <option value="70000">70,000</option>
-                          <option value="80000">80,000</option>
-                          <option value="90000">90,000</option>
-                  </select>
-              </div>
+
+
               <div class="row">
-                  <div class="four columns">
-                      <label for="puertas">Puertas</label>
-                      <select class="u-full-width" id="puertas">
-                              <option value="">Seleccione</option>
-                              <option value="2">2</option>
-                              <option value="4">4</option>
-                      </select>
-                  </div>
-                  <div class="four columns">
-                      <label for="transmision">Transmisión</label>
-                      <select class="u-full-width" id="transmision">
-                              <option value="">Seleccione</option>
-                              <option value="automatico">Automática</option>
-                              <option value="manual">Manual</option>
-                      </select>
-                  </div>
-                  <div class="four columns">
-                      <label for="color">Color</label>
-                      <select class="u-full-width" id="color">
-                              <option value="">Seleccione</option>
-                              <option value="Negro">Negro</option>
-                              <option value="Azul">Azul</option>
-                              <option value="Blanco">Blanco</option>
-                              <option value="Rojo">Rojo</option>
-                      </select>
-                  </div>
-              </div>
-          </div>
-      </form>
-			</div>
-      </article>
+
+
+
+
+
+
+
+
+
+      </form> <!-- id=Buscador-->
+                  <h1>Resultados</h1>
+                  <div id="resultado"></div>
+
+			</div> <!-- Class=Content-->
+              <script src="js/data.js"></script>
+              <script src="js/athletes.js"></script>
+              <script src="js/main.js"></script>
+    </article>
       <!-- Fin - Main -->
 
 
