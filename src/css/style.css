@@ -391,9 +391,12 @@ body {
 .content-noticias{
   background-color: #eee;
   max-width: 360px;
+  height: fit-content;
   border: 2px solid #ccc;
   border-radius: 10px;
-  padding: 10px;
+  padding: 3px;
+
+
   cursor: pointer;
   transition: .3s;
 }
