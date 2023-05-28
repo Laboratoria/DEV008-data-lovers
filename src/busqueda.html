@@ -17,14 +17,10 @@
     <link rel="stylesheet"    href="css/style.css">
     <!------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" >
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/app.css">
+
 
   </head>
 
@@ -67,81 +63,75 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
-      <h1>Buscador de Atletas que participaron en Rio 2016</h1>
+      <h1 class="titulocentral">Buscador de Atletas que participaron en Rio 2016</h1>
 
 
 
 
-      <div class="container">
+      <div class="container-1">
 
          <!-- GENERO -->
         <label for="gender">Género:</label>
         <select id="gender">
-          <option value="">Todos</option>
-          <option value="M">Masculino</option>
-          <option value="F">Femenino</option>
+          <option value="">Seleccione</option>
         </select>
+          <!-- Nombre -->
+          <label for="name">Nombre:</label>
+          <select id="name">
+            <option value="">Seleccione</option>
+          </select>
+
 
         <!-- MEDALLA -->
         <label for="medal">Medalla:</label>
-        <select id="medal">
-          <option value="">Todas</option>
-          <option value="Bronze">Bronce</option>
-          <option value="Silver">Plata</option>
-          <option value="Gold">Oro</option>
-        </select>
+          <select id="medal">
+            <option value="">Seleccione</option>
+          </select>
 
         <!-- DEPORTE -->
         <label for="sport">Deporte:</label>
-        <input type="text" id="sport">
+          <select id="sport">
+            <option value="">Seleccione</option>
+          </select>
 
          <!-- EQUIPO -->
         <label for="team">Equipo:</label>
-        <input type="text" id="team">
+        <select id="team">
+          <option value="">Seleccione</option>
+        </select>
 
         <!-- EVENTO -->
         <label for="event">Evento:</label>
-        <input type="text" id="event">
+        <select id="event">
+        <option value="">Seleccione</option>
+          </select>
 
         <!-- EDAD  -->
-        <!-- EDAD MÍNIMA  -->
+        <!-- EDAD MÍNIMA   -->
+        <label class="titulo">EDAD EXPRESADA EN AÑOS</label>
+        <br>
         <label for="ageMin">Edad mínima:</label>
-        <input type="number" id="ageMin">
+        <select  id="ageMin">
+          <option value="">Seleccione</option>
+        </select>
 
         <!-- EDAD MÁXIMA  -->
         <label for="ageMax">Edad máxima:</label>
-        <input type="number" id="ageMax">
-
-        <!-- TALLA  -->
-        <!-- TALLA MÍNIMA  -->
-        <label for="heightMin">Talla mínima:</label>
-        <input type="number" id="heightMin">
-
-         <!-- TALLA MÁXIMA  -->
-        <label for="heightMax">Talla máxima:</label>
-        <input type="number" id="heightMax">
-
-        <!-- PESO  -->
-        <!-- PESO MÍNIMO  -->
-        <label for="weightMin">Talla mínima:</label>
-        <input type="number" id="weightMin">
-
-         <!-- PESO MÁXIMO  -->
-        <label for="weightMax">Talla máxima:</label>
-        <input type="number" id="weightMax">
+        <select id="ageMax">
+          <option value="">Seleccione</option>
+        </select>
 
 
 
-        <button onclick="buscar()">Buscar</button>
+        <button class="buscar" id="btnBuscar" >Buscar</button>
         <div id="results"></div>
 
 
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-      <script src="js/athletes.js"></script>
-      <script src="js/app.js"></script>
-    </article>
+      <script src="js/main.js" type="module"></script>
+      </article>
       <!-- Fin - Main -->
 
 
@@ -213,7 +203,7 @@
  <!-- Fin - Footer -->
 
 
-    <script src="main.js"> </script>
+
 
     </body>
 

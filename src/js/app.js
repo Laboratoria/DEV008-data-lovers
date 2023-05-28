@@ -1,4 +1,4 @@
-import { athletes } from '../athletes';
+import { athletes } from './js/athletes';
 
 // Función para buscar y filtrar los atletas
 function buscar() {
@@ -19,6 +19,12 @@ function buscar() {
   const weightMinFilter = parseInt(document.getElementById('weightMin').value);
   const weightMaxFilter = parseInt(document.getElementById('weightMax').value);
 
+  //
+  athletes.forEach(team => {
+    const optionTeam = document.createElement('team');
+    optionTeam.textContent =team.team;
+    teamFilter.appendChild(optionTeam);
+  });
 
 
   const resultsContainer = document.getElementById('results');
