@@ -1,4 +1,4 @@
-import { athletes } from "js/athletes.js";
+import { athletes } from "/./src/js/athletes.js";
 
 // Importa la base de datos desde athletes.js
 //buscar el boton y luego
