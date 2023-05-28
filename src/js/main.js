@@ -1,4 +1,9 @@
-import { athletes } from "/src/js/athletes.js";
+import { athletes } from "/./src/js/athletes.js";
+
+// Importa la base de datos desde athletes.js
+//buscar el boton y luego
+///eventlistener declarar buscar
+
 
 //buscar el boton y luego
 ///eventlistener declarar buscar
@@ -15,15 +20,12 @@ const uniqueGenders = athletes
   .map((athlete) => athlete.gender)
   .filter((value, index, self) => self.indexOf(value) === index)
   .sort((a, b) => a.localeCompare(b));
-
-// Agrega una opción limpia al principio del arreglo
-//uniqueGenders.unshift("");
-
 uniqueGenders.forEach((gender) => {
   const option = document.createElement("option");
   option.textContent = gender;
   genderFilter.appendChild(option);
 });
+
 
 // Name: Usando filter
 const uniqueNames = athletes
@@ -88,14 +90,6 @@ uniqueTeams.forEach((team) => {
 // EDAD
 const ageMinFilter = document.getElementById("ageMin");
 const ageMaxFilter = document.getElementById("ageMax");
-/*// TALLA
-const heightMinFilter = document.getElementById("heightMin");
-const heightMaxFilter = document.getElementById("heightMax");
-//
-const weightMinFilter = document.getElementById("weightMin");
-const weightMaxFilter = document.getElementById("weightMax");
-
-*/
 
 // EDAD :filtros
 const ages = athletes.map((athlete) => athlete.age);
@@ -114,75 +108,10 @@ for (let i = minAge; i <= maxAge; i++) {
   ageMaxFilter.appendChild(optionMax);
 }
 
-/*
-// Altura
-const heights = athletes.map(athlete => athlete.height);
-const minHeight = Math.min(...heights);
-const maxHeight = Math.max(...heights);
 
-for (let i = minHeight; i <= maxHeight; i++) {
-  const optionMin = document.createElement('option');
-  optionMin.value = i;
-  optionMin.textContent = i + ' cm';
-  heightMinFilter.appendChild(optionMin);
 
-  const optionMax = document.createElement('option');
-  optionMax.value = i;
-  optionMax.textContent = i + ' cm';
-  heightMaxFilter.appendChild(optionMax);
-}
 
-// Peso
-const weights = athletes.map(athlete => parseInt(athlete.weight));
-const minWeight = Math.min(...weights);
-const maxWeight = Math.max(...weights);
 
-for (let i = minWeight; i <= maxWeight; i++) {
-  const optionMin = document.createElement('option');
-  optionMin.value = i;
-  optionMin.textContent = i + " kg";
-  weightMinFilter.appendChild(optionMin);
 
-  const optionMax = document.createElement('option');
-  optionMax.value = i;
-  optionMax.textContent = i + " kg";
-  weightMaxFilter.appendChild(optionMax);
-}
 
-*/
 
-const btnBuscar = document.getElementById("btnBuscar");
-btnBuscar.addEventListener("click", FiltradoBuscar);
-
-function FiltradoBuscar() {
-  const filteredAthletes = athletes.filter((athlete) => {
-    return (
-      (genderFilter === "" || athlete.gender === genderFilter) &&
-      (medalFilter === "" || athlete.medal === medalFilter) &&
-      (ageMinFilter || athlete.age >= ageMinFilter) &&
-      (ageMaxFilter || athlete.age <= ageMaxFilter) &&
-      (teamFilter === "" || athlete.team === teamFilter) &&
-      (sportFilter === "" || athlete.team === sportFilter) &&
-      (eventFilter === "" || athlete.team === eventFilter)
-    );
-  });
-
-  filteredAthletes.forEach((athlete) => {
-    const resultItem = document.createElement("div");
-    resultItem.classList.add("result-item");
-
-    resultItem.innerHTML = `
-      <h3>${athlete.name}</h3>
-      <p>Género: ${athlete.gender}</p>
-      <p>Altura: ${athlete.height}</p>
-      <p>Peso: ${athlete.weight}</p>
-      <p>Deporte: ${athlete.sport}</p>
-      <p>Equipo: ${athlete.team}</p>
-      <p>Edad: ${athlete.age}</p>
-      <p>Evento: ${athlete.event}</p>
-      <p>Medalla: ${athlete.medal}</p>
-    `;
-
-    btnBuscar.appendChild(FiltradoBuscar);
-  });
-}
