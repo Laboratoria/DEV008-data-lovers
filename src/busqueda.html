@@ -17,14 +17,10 @@
     <link rel="stylesheet"    href="css/style.css">
     <!------->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" >
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/app.css">
+
 
   </head>
 
@@ -67,113 +63,94 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
-      <h1>Buscador de Atletas que participaron en Rio 2016</h1>
-
-      <div class="content">
-
-        <form id="buscador">
-          <div class="row">
-
-                          <!-- GENERO -->
-                        <div class="three columns">
-                            <label for="gender">Genero</label>
-                                <select class="u-full-width" id="gender">
-                                      <option value="">Seleccione</option>
-                                </select>
-                        </div>
-                         <!-- NOMBRE -->
-                              <div class="three columns">
-                                  <label for="name">Nombre</label>
-                                      <select class="u-full-width" id="name">
-                                            <option value="">Seleccione</option>
-                                      </select>
-                              </div>
-
-                          <!--- DEPORTE -->
-                          <div class="three columns">
-                              <label for="sport">Deporte</label>
-                                  <select class="u-full-width" id="sport">
-                                        <option value="">Seleccione</option>
-                                  </select>
-                          </div>
-
-                        <!--- MEDALLA -->
-                        <div class="three columns">
-                            <label for="medal">Medalla</label>
-                              <select class="u-full-width" id="medal">
-                                    <option value="">Seleccione</option>
-                              </select>
-                        </div>
-
-                        <!--- EQUIPO -->
-                        <div class="three columns">
-                          <label for="team">Equipo</label>
-                          <select class="u-full-width" id="team">
-                          <option value="">Seleccione</option>
-
-                        </select>
-                       </div>
-                       <!--- EVENTO -->
-
-                      <div class="three columns">
-                        <label for="event">Evento</label>
-                        <select class="u-full-width" id="event">
-                                <option value="">Seleccione</option>
-                        </select>
-                      </div>
-               <!--- MAXIMOS Y MÍNIMOS -->
-              <!--- MAXIMOS Y MÍNIMOS  ALTURA-->
-
-                      <div class="three columns">
-                        <label for="heightMax">Altura (Max) </label>
-                        <select class="u-full-width" id="heightMax">
-                                <option value="">Seleccione</option>
-
-                        </select>
-                    </div>
-
-                    <div class="three columns">
-                      <label for="heightMin">Altura (Min) </label>
-                      <select class="u-full-width" id="heightMin">
-                              <option value="">Seleccione</option>
-
-                      </select>
-                  </div>
-
-              </div>
+      <h1 class="titulocentral">Buscador de Atletas que participaron en Rio 2016</h1>
 
 
-            </div>
+
+
+      <div class="container-1">
+
+         <!-- GENERO -->
+        <label for="gender">Género:</label>
+        <select id="gender">
+          <option value="">Seleccione</option>
+        </select>
+          <!-- Nombre -->
+          <label for="name">Nombre:</label>
+          <select id="name">
+            <option value="">Seleccione</option>
+          </select>
+
+
+        <!-- MEDALLA -->
+        <label for="medal">Medalla:</label>
+          <select id="medal">
+            <option value="">Seleccione</option>
+          </select>
+
+        <!-- DEPORTE -->
+        <label for="sport">Deporte:</label>
+          <select id="sport">
+            <option value="">Seleccione</option>
+          </select>
+
+         <!-- EQUIPO -->
+        <label for="team">Equipo:</label>
+        <select id="team">
+          <option value="">Seleccione</option>
+        </select>
+
+        <!-- EVENTO -->
+        <label for="event">Evento:</label>
+        <select id="event">
+        <option value="">Seleccione</option>
+          </select>
+
+        <!-- EDAD  -->
+        <!-- EDAD MÍNIMA   -->
+        <label class="titulo">EDAD EXPRESADA EN AÑOS</label>
+        <br>
+        <label for="ageMin">Edad mínima:</label>
+        <select  id="ageMin">
+          <option value="">Seleccione</option>
+        </select>
+
+        <!-- EDAD MÁXIMA  -->
+        <label for="ageMax">Edad máxima:</label>
+        <select id="ageMax">
+          <option value="">Seleccione</option>
+        </select>
+
+
+
+        <button class="buscar" id="btnBuscar" >Buscar</button>
+        <div id="results"></div>
+
+
+      </div>
+      
       <table id="resultado">
-          <thead> 
-            <tr> 
-              <th>name</th>
-              <!--<th>gender</th>-->
-              <th>height</th>
-              <th>weight</th>
-              <th>sport</th>
-              <th>team</th>
-              <th>NOC</th>
-              <th>age</th>
-              <th>event</th>
-              <th>medal</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!--Aqui se podran agregar los datos de los deportistas-->
-          </tbody>
-      </table>      
+        <thead> 
+          <tr> 
+            <th>name</th>
+            <!--<th>gender</th>-->
+            <th>height</th>
+            <th>weight</th>
+            <th>sport</th>
+            <th>team</th>
+            <th>NOC</th>
+            <th>age</th>
+            <th>event</th>
+            <th>medal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Aqui se podran agregar los datos de los deportistas-->
+        </tbody>
+    </table>      
 
-      <!--<div class="row">
-      </form> id=Buscador
-                  <h1>Resultados</h1>
-                  <div id="resultado"></div>//-->
-
-			</div> <!-- Class=Content-->
-             <!-- <script src="js/data.js"></script>
-              <script src="js/athletes.js"></script>
-              <script src="js/main.js"></script>-->
-    </article>
+      <script src="/./src/js/main.js" type="module"></script>
+      </article>
       <!-- Fin - Main -->
 
 
