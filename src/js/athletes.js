@@ -1,5 +1,5 @@
 
-  const athletes = [
+  export const athletes = [
 
     {
       "name": "Giovanni Abagnale", /**/

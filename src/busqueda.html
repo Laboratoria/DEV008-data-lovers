@@ -11,7 +11,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Poppins:wght@200&family=Quicksand&family=Vina+Sans&display=swap');
     </style>
 
-    <script defer src="js/main.js"></script>
+    
 
     <link rel="shortcut icon" href="image/juegos-olimpicos.png">
     <link rel="stylesheet"    href="css/style.css">
@@ -79,8 +79,6 @@
                             <label for="gender">Genero</label>
                                 <select class="u-full-width" id="gender">
                                       <option value="">Seleccione</option>
-                                      <option value="Femenino">F</option>
-                                      <option value="Masculino">M</option>
                                 </select>
                         </div>
                          <!-- NOMBRE -->
@@ -104,9 +102,6 @@
                             <label for="medal">Medalla</label>
                               <select class="u-full-width" id="medal">
                                     <option value="">Seleccione</option>
-                                    <option value="Gold">Oro</option>
-                                    <option value="Silver">Plata</option>
-                                    <option value="Bronze">Bronce</option>
                               </select>
                         </div>
 
@@ -130,16 +125,16 @@
               <!--- MAXIMOS Y MÍNIMOS  ALTURA-->
 
                       <div class="three columns">
-                        <label for="heightMa">Altura (Max) </label>
-                        <select class="u-full-width" id="heightMa">
+                        <label for="heightMax">Altura (Max) </label>
+                        <select class="u-full-width" id="heightMax">
                                 <option value="">Seleccione</option>
 
                         </select>
                     </div>
 
                     <div class="three columns">
-                      <label for="heightMi">Altura (Min) </label>
-                      <select class="u-full-width" id="heightMi">
+                      <label for="heightMin">Altura (Min) </label>
+                      <select class="u-full-width" id="heightMin">
                               <option value="">Seleccione</option>
 
                       </select>
@@ -149,28 +144,35 @@
 
 
             </div>
+      <table id="resultado">
+          <thead> 
+            <tr> 
+              <th>name</th>
+              <!--<th>gender</th>-->
+              <th>height</th>
+              <th>weight</th>
+              <th>sport</th>
+              <th>team</th>
+              <th>NOC</th>
+              <th>age</th>
+              <th>event</th>
+              <th>medal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--Aqui se podran agregar los datos de los deportistas-->
+          </tbody>
+      </table>      
 
-
-
-
-              <div class="row">
-
-
-
-
-
-
-
-
-
-      </form> <!-- id=Buscador-->
+      <!--<div class="row">
+      </form> id=Buscador
                   <h1>Resultados</h1>
-                  <div id="resultado"></div>
+                  <div id="resultado"></div>//-->
 
 			</div> <!-- Class=Content-->
-              <script src="js/data.js"></script>
+             <!-- <script src="js/data.js"></script>
               <script src="js/athletes.js"></script>
-              <script src="js/main.js"></script>
+              <script src="js/main.js"></script>-->
     </article>
       <!-- Fin - Main -->
 
@@ -243,8 +245,8 @@
  <!-- Fin - Footer -->
 
 
-    <script src="main.js"> </script>
-
+    <script src="js/main.js" type="module"> </script>
+    
     </body>
 
 </html>
