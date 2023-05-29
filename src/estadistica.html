@@ -11,7 +11,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Poppins:wght@200&family=Quicksand&family=Vina+Sans&display=swap');
     </style>
 
-    <script defer src="main.js"></script>
+
 
     <link rel="shortcut icon" href="image/juegos-olimpicos.png">
     <link rel="stylesheet"    href="css/style.css">
@@ -70,45 +70,23 @@
     <article class="main">
 <!-- INICIO DEL CONTENT - Main -->
       <div class="content">
-        <div>
-          <canvas id="genderChart"></canvas>
+         <!-- GRÁFICO DE MEDALLAS -->
+         <canvas id="chart"></canvas>
+
+         <script src="/./src/js/data.js" type="module"></script>
+
+          <canvas id="chart"></canvas>
+          <canvas id="chartGender"></canvas>
+
+
+          <canvas  id="ChartSport"></canvas>
+          <canvas  id="rankingEvent"></canvas>
+
+
+
         </div>
 
-        <div>
-          <canvas id="medalChart"></canvas>
-        </div>
 
-        <div>
-          <h3>Ranking de los 10 eventos más participantes</h3>
-          <table id="eventTable" class="display" style="width:100%">
-            <thead>
-              <tr>
-                <th>Evento</th>
-                <th>Cantidad de participantes</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-
-        <div>
-          <canvas id="ageChart"></canvas>
-        </div>
-
-        <div>
-          <h3>Ranking de equipos por más participantes</h3>
-          <table id="teamTable" class="display" style="width:100%">
-            <thead>
-              <tr>
-                <th>Equipo</th>
-                <th>Cantidad de participantes</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-
-        <script src="js/athletes.js"></script>
         <script src="js/main.js" type="module"></script>
         <script src="js/app.js" type="module"></script>
 

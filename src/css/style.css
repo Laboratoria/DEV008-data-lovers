@@ -339,7 +339,7 @@ body {
 
 @media (max-width: 880px) {
 
-
+    .main,
    .footer{
     font: bold 14px sans-serif;
   }
@@ -358,7 +358,7 @@ body {
     text-align: center;
   }
 
-  .navbar,
+  .navbar,.main,
   .footer .footer-center i{
     margin-left: 0;
   }
@@ -435,7 +435,7 @@ article {
 
     /* Estilos del buscador */
     .container-1 {
-  width: 700px;
+  width: 800px;
   background: #DBDBDB;
   padding: 30px;
   margin: auto;
