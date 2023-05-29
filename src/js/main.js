@@ -1,4 +1,4 @@
-import { athletes } from "/./src/js/athletes.js";
+import { athletes } from './athletes.js' 
 
 // Importa la base de datos desde athletes.js
 //buscar el boton y luego
@@ -109,9 +109,87 @@ for (let i = minAge; i <= maxAge; i++) {
 }
 
 
+// DECLARACIÓN DE MÍNIMOS Y MÁXIMOS
+// EDAD
+
+// TALLA
+const heightMinFilter = document.getElementById("heightMin");
+const heightMaxFilter = document.getElementById("heightMax");
+// PESO
+const weightMinFilter = document.getElementById("weightMin");
+const weightMaxFilter = document.getElementById("weightMax");
 
 
+const weights = athletes.map(athlete => athlete.weight);
+const minWeight = Math.min(...weights);
+const maxWeight = Math.max(...weights);
 
+for (let i = minWeight; i <= maxWeight; i++) {
+  const optionMin = document.createElement('option');
+  optionMin.value = i;
+  optionMin.textContent = i;
+  weightMinFilter.appendChild(optionMin);
 
+  const optionMax = document.createElement('option');
+  optionMax.value = i;
+  optionMax.textContent = i;
+  weightMaxFilter.appendChild(optionMax);
+}
 
+//MOSTRAR EN PANTALLA DATOS
+document.addEventListener("DOMContentLoaded", function() {
+  //Obtener el elemento de la tabla
+  const table = document.getElementById("resultado");
+  const tbody = table.getElementsByTagName("tbody")[0];
 
+  // Recorrer los datos de los atletas
+  athletes.forEach(athlete => {
+    // Crear una nueva fila
+  const row = document.createElement("tr");
+
+    //Crear celdas para cada propiedad del atleta
+  const nameCell = document.createElement("td");
+  nameCell.textContent = athlete.name;
+  row.appendChild(nameCell);
+
+  const genderCell = document.createElement("td");
+  genderCell.textContent = athlete.gender;
+  row.appendChild(genderCell);
+
+  const heightCell = document.createElement("td");
+  heightCell.textContent = athlete.height;
+  row.appendChild(heightCell);
+
+  const weightCell = document.createElement("td");
+  weightCell.textContent = athlete.weight;
+  row.appendChild(weightCell);
+
+  const sportCell = document.createElement("td");
+  sportCell.textContent = athlete.sport;
+  row.appendChild(sportCell);
+
+  const teamCell = document.createElement("td");
+  teamCell.textContent = athlete.team;
+  row.appendChild(teamCell);
+
+  const nocCell = document.createElement("td");
+  nocCell.textContent = athlete.noc;
+  row.appendChild(nocCell);
+
+    const ageCell = document.createElement("td");
+    ageCell.textContent = athlete.age;
+    row.appendChild(ageCell);
+
+    const eventCell = document.createElement("td");
+    eventCell.textContent = athlete.event;
+    row.appendChild(eventCell);
+
+    const medalCell = document.createElement("td");
+    medalCell.textContent = athlete.medal;
+    row.appendChild(medalCell);
+
+    // Agregar la fila a la tabla
+    tbody.appendChild(row);
+
+  });
+});
