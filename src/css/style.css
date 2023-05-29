@@ -430,7 +430,7 @@ article {
 /************INDEX***************/
 
 
-/************ESTADÍSTICAS***************/
+/************BUSCADOR***************/
 /************MAIN-003***************/
 
     /* Estilos del buscador */
@@ -529,13 +529,24 @@ article {
 /************ESTADÍSTICAS***************/
 
 
-/************C0NTACTOS***************/
-/************MAIN-004***************/
+
+.chart{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  position: static;
+}
+.chartGender{
+  border: 5px solid darkblue;
+  height: 150px;
+  width: 200px;
 
 
 
+}
 
-/************C0NTACTOS***************/
+
+
 /************C0NTACTOS***************/
 /************MAIN-004***************/
 

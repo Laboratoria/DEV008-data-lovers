@@ -27,9 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-
-
-  </head>
+   </head>
 
 
 
@@ -70,47 +68,20 @@
     <article class="main">
 <!-- INICIO DEL CONTENT - Main -->
       <div class="content">
-        <div>
-          <canvas id="genderChart"></canvas>
-        </div>
 
-        <div>
-          <canvas id="medalChart"></canvas>
-        </div>
+          <!-- GRÁFICO DE MEDALLAS -->
+          <canvas id="chart"></canvas>
 
-        <div>
-          <h3>Ranking de los 10 eventos más participantes</h3>
-          <table id="eventTable" class="display" style="width:100%">
-            <thead>
-              <tr>
-                <th>Evento</th>
-                <th>Cantidad de participantes</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+          <script src="/./src/js/data.js" type="module"></script>
 
-        <div>
-          <canvas id="ageChart"></canvas>
-        </div>
+           <canvas id="chart"></canvas>
+           <canvas id="chartGender"></canvas>
 
-        <div>
-          <h3>Ranking de equipos por más participantes</h3>
-          <table id="teamTable" class="display" style="width:100%">
-            <thead>
-              <tr>
-                <th>Equipo</th>
-                <th>Cantidad de participantes</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
 
-        <script src="js/athletes.js"></script>
-        <script src="js/main.js" type="module"></script>
-        <script src="js/app.js" type="module"></script>
+           <canvas  id="ChartSport"></canvas>
+           <canvas  id="rankingEvent"></canvas>
+
+
 
 
 
