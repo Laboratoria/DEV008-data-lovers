@@ -1,9 +1,8 @@
-import { athletes } from './athletes.js' 
+import { athletes } from "./athletes.js";
 
 // Importa la base de datos desde athletes.js
 //buscar el boton y luego
 ///eventlistener declarar buscar
-
 
 //buscar el boton y luego
 ///eventlistener declarar buscar
@@ -14,6 +13,9 @@ const medalFilter = document.getElementById("medal");
 const teamFilter = document.getElementById("team");
 const sportFilter = document.getElementById("sport");
 const eventFilter = document.getElementById("event");
+// Creación del boton buscar
+const buscarButton = document.getElementById("btnBuscar");
+buscarButton.addEventListener("click", aplicarFiltros);
 
 // Gender: Usando filter
 const uniqueGenders = athletes
@@ -25,7 +27,6 @@ uniqueGenders.forEach((gender) => {
   option.textContent = gender;
   genderFilter.appendChild(option);
 });
-
 
 // Name: Usando filter
 const uniqueNames = athletes
@@ -108,10 +109,9 @@ for (let i = minAge; i <= maxAge; i++) {
   ageMaxFilter.appendChild(optionMax);
 }
 
-
 // DECLARACIÓN DE MÍNIMOS Y MÁXIMOS
 // EDAD
-
+/*
 // TALLA
 const heightMinFilter = document.getElementById("heightMin");
 const heightMaxFilter = document.getElementById("heightMax");
@@ -119,66 +119,67 @@ const heightMaxFilter = document.getElementById("heightMax");
 const weightMinFilter = document.getElementById("weightMin");
 const weightMaxFilter = document.getElementById("weightMax");
 
-
-const weights = athletes.map(athlete => athlete.weight);
+const weights = athletes.map((athlete) => athlete.weight);
 const minWeight = Math.min(...weights);
 const maxWeight = Math.max(...weights);
 
 for (let i = minWeight; i <= maxWeight; i++) {
-  const optionMin = document.createElement('option');
+  const optionMin = document.createElement("option");
   optionMin.value = i;
   optionMin.textContent = i;
   weightMinFilter.appendChild(optionMin);
 
-  const optionMax = document.createElement('option');
+  const optionMax = document.createElement("option");
   optionMax.value = i;
   optionMax.textContent = i;
   weightMaxFilter.appendChild(optionMax);
-}
+}*/
 
 //MOSTRAR EN PANTALLA DATOS
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   //Obtener el elemento de la tabla
   const table = document.getElementById("resultado");
   const tbody = table.getElementsByTagName("tbody")[0];
 
   // Recorrer los datos de los atletas
-  athletes.forEach(athlete => {
+  athletes.forEach((athlete) => {
     // Crear una nueva fila
-  const row = document.createElement("tr");
+    const row = document.createElement("tr");
 
     //Crear celdas para cada propiedad del atleta
-  const nameCell = document.createElement("td");
-  nameCell.textContent = athlete.name;
-  row.appendChild(nameCell);
+    const nameCell = document.createElement("td");
+    nameCell.textContent = athlete.name;
+    row.appendChild(nameCell);
 
-  const genderCell = document.createElement("td");
-  genderCell.textContent = athlete.gender;
-  row.appendChild(genderCell);
-
-  const heightCell = document.createElement("td");
-  heightCell.textContent = athlete.height;
-  row.appendChild(heightCell);
-
-  const weightCell = document.createElement("td");
-  weightCell.textContent = athlete.weight;
-  row.appendChild(weightCell);
-
-  const sportCell = document.createElement("td");
-  sportCell.textContent = athlete.sport;
-  row.appendChild(sportCell);
-
-  const teamCell = document.createElement("td");
-  teamCell.textContent = athlete.team;
-  row.appendChild(teamCell);
-
-  const nocCell = document.createElement("td");
-  nocCell.textContent = athlete.noc;
-  row.appendChild(nocCell);
+    const genderCell = document.createElement("td");
+    genderCell.textContent = athlete.gender;
+    row.appendChild(genderCell);
 
     const ageCell = document.createElement("td");
     ageCell.textContent = athlete.age;
     row.appendChild(ageCell);
+
+    const heightCell = document.createElement("td");
+    heightCell.textContent = athlete.height;
+    row.appendChild(heightCell);
+
+    const weightCell = document.createElement("td");
+    weightCell.textContent = athlete.weight;
+    row.appendChild(weightCell);
+
+    const sportCell = document.createElement("td");
+    sportCell.textContent = athlete.sport;
+    row.appendChild(sportCell);
+
+    const teamCell = document.createElement("td");
+    teamCell.textContent = athlete.team;
+    row.appendChild(teamCell);
+
+    /*
+    const nocCell = document.createElement("td");
+    nocCell.textContent = athlete.noc;
+    row.appendChild(nocCell);
+*/
 
     const eventCell = document.createElement("td");
     eventCell.textContent = athlete.event;
@@ -190,6 +191,78 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Agregar la fila a la tabla
     tbody.appendChild(row);
-
   });
 });
+
+//APLICAR FILTROS
+// Obtener los valores seleccionados de los filtros
+
+function aplicarFiltros() {
+  const selectedName = nameFilter.value;
+  const selectedGender = genderFilter.value;
+  const selectedMedal = medalFilter.value;
+  const selectedTeam = teamFilter.value;
+  const selectedSport = sportFilter.value;
+  const selectedEvent = eventFilter.value;
+  const selectedAgeMin = ageMinFilter.value;
+  const selectedAgeMax = ageMaxFilter.value;
+
+  const filteredAthletes = athletes.filter((athlete) => {
+    return (
+      (selectedName === "" || athlete.name === selectedName) &&
+      (selectedGender === "" || athlete.gender === selectedGender) &&
+      (selectedMedal === "" || athlete.medal === selectedMedal) &&
+      (selectedTeam === "" || athlete.team === selectedTeam) &&
+      (selectedSport === "" || athlete.sport === selectedSport) &&
+      (selectedEvent === "" || athlete.event === selectedEvent) &&
+      (selectedAgeMin === "" || athlete.age >= parseInt(selectedAgeMin)) &&
+      (selectedAgeMax === "" || athlete.age <= parseInt(selectedAgeMax))
+    );
+  });
+
+  const table = document.getElementById("resultado");
+  const tbody = table.getElementsByTagName("tbody")[0];
+  tbody.innerHTML = "";
+
+  filteredAthletes.forEach((athlete) => {
+    const row = document.createElement("tr");
+
+    const nameCell = document.createElement("td");
+    nameCell.textContent = athlete.name;
+    row.appendChild(nameCell);
+
+    const genderCell = document.createElement("td");
+    genderCell.textContent = athlete.gender;
+    row.appendChild(genderCell);
+
+    const ageCell = document.createElement("td");
+    ageCell.textContent = athlete.age;
+    row.appendChild(ageCell);
+
+    const heightCell = document.createElement("td");
+    heightCell.textContent = athlete.height;
+    row.appendChild(heightCell);
+
+    const weightCell = document.createElement("td");
+    weightCell.textContent = athlete.weight;
+    row.appendChild(weightCell);
+
+    const sportCell = document.createElement("td");
+    sportCell.textContent = athlete.sport;
+    row.appendChild(sportCell);
+
+    const teamCell = document.createElement("td");
+    teamCell.textContent = athlete.team;
+    row.appendChild(teamCell);
+
+    const eventCell = document.createElement("td");
+    eventCell.textContent = athlete.event;
+    row.appendChild(eventCell);
+
+    const medalCell = document.createElement("td");
+    medalCell.textContent = athlete.medal;
+    row.appendChild(medalCell);
+
+    tbody.appendChild(row);
+  });
+}
