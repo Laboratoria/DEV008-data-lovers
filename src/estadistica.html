@@ -11,7 +11,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Poppins:wght@200&family=Quicksand&family=Vina+Sans&display=swap');
     </style>
 
-    <script defer src="/src/js/main.js"></script>
+
 
     <link rel="shortcut icon" href="image/juegos-olimpicos.png">
     <link rel="stylesheet"    href="css/style.css">
@@ -21,8 +21,13 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!--  -->
-
-  </head>
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+   </head>
 
 
 
@@ -53,7 +58,7 @@
         <li style="float:right"> <a href="../src/testimonios.html" class="link-3">Testimonios</a>     </li>
         <li style="float:right"> <a href="../src/estadistica.html" class="link-2">Estadísticas</a>    </li>
         <li style="float:right"> <a href="../src/busqueda.html"    class="link-1">Búsqueda </a>       </li>
-      </ul>
+            </ul>
 
         </nav>
     <!-- Fin - Barra de Navegación -->
@@ -61,62 +66,28 @@
     <!-- Inicio - Main -->
     <!-- Cuerpo del contenido -->
     <article class="main">
-      <h1>NOTICIAS</h1> <br>
-
+<!-- INICIO DEL CONTENT - Main -->
       <div class="content">
 
-        <div class="content-noticias" id="item">
-          <h3>BOXEO</h3>
-          <h2> Óscar Valdez se declara listo para una pelea de mexicanos contra el 'Vaquero' Navarrete </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/sl28z6gdryrjoidmm2rl" alt="Oscar">
-        </div>
+          <!-- GRÁFICO DE MEDALLAS -->
+          <canvas id="chart"></canvas>
 
-        <div class="content-noticias" id="item">
-          <h3>BALONCESTO</h3>
-          <h2> Carmelo Anthony, triple campeón olímpico, anuncia su retirada del baloncesto </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfvhthv5cr0gbrmkbkle" alt="carmelo">
-        </div>
+          <script src="/./src/js/data.js" type="module"></script>
 
-        <div class="content-noticias" id="item">
-          <h3>BALONCESTO</h3>
-          <h2> Carmelo Anthony, triple campeón olímpico, anuncia su retirada del baloncesto </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfvhthv5cr0gbrmkbkle" alt="carmelo">
-        </div>
+           <canvas id="chart"></canvas>
+           <canvas id="chartGender"></canvas>
 
-        <div class="content-noticias" id="item">
-          <h3>ATLETISMO</h3>
-          <h2> Diamond League en Rabat 2023: previa, programa, estrellas y cómo ver la Liga de Diamante </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/elrdehxlomxhvt6ui9q6" alt="diamond">
-        </div>
 
-        <div class="content-noticias" id="item">
-          <h3>CICLISMO EN RUTA</h3>
-          <h2> Giro d'Italia: mayores victorias latinas y españolas en la grande italiana de ciclismo </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfy1djiep466douunzoq" alt="giro">
-        </div>
+           <canvas  id="ChartSport"></canvas>
+           <canvas  id="rankingEvent"></canvas>
 
-        <div class="content-noticias" id="item">
-          <h3>ATLETISMO</h3>
-          <h2> La marcha española brilla en el Europeo por equipos: un récord del mundo y 12 medallas </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/twjznuws7qaexb5i08we" alt="marcha">
-        </div>
-        <div class="content-noticias" id="item">
-          <h3>ATLETISMO</h3>
-          <h2> Diamond League en Rabat 2023: previa, programa, estrellas y cómo ver la Liga de Diamante </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/elrdehxlomxhvt6ui9q6" alt="diamond">
-        </div>
 
-        <div class="content-noticias" id="item">
-          <h3>CICLISMO EN RUTA</h3>
-          <h2> Giro d'Italia: mayores victorias latinas y españolas en la grande italiana de ciclismo </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/dfy1djiep466douunzoq" alt="giro">
-        </div>
 
-        <div class="content-noticias" id="item">
-          <h3>ATLETISMO</h3>
-          <h2> La marcha española brilla en el Europeo por equipos: un récord del mundo y 12 medallas </h2>
-          <img src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/twjznuws7qaexb5i08we" alt="marcha">
-        </div>
+
+
+
+
+			</div> <!-- FIN  DEL CONTENT - DIV -->
 
       </article>
       <!-- Fin - Main -->
@@ -130,7 +101,7 @@
     <footer class="footer">
 
       <div class="footer-left">
-           <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
+       <img src="image/footerlogo.webp" alt="Footer logo" height="90px" width="190px">
        <h3> Juegos Olímpicos </h3>
 
        <p class="footer-links">
