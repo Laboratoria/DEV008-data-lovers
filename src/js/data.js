@@ -66,4 +66,3 @@ new Chart(ctx1, {
   data: datag,
 
 });
-
