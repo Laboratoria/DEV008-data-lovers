@@ -67,25 +67,47 @@
     <!-- Cuerpo del contenido -->
     <article class="main">
 <!-- INICIO DEL CONTENT - Main -->
-      <div class="content">
+      <div class="contenedor-cajas">
 
           <!-- GRÁFICO DE MEDALLAS -->
-          <canvas id="chart"></canvas>
-
-          <script src="/./src/js/data.js" type="module"></script>
-
-           <canvas id="chart"></canvas>
-
-           <canvas id="chartGender"></canvas>
-
+          <div class="cajacontenedorag">
+          <h1>Gráfico por medallas obtenidas</h1>
+          <canvas id="chart" class="caja1"></canvas>
+          </div>
+          <!--GRAFICO POR GENERO-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por Género</h1>
+          <canvas id="chartGender" class="caja1"></canvas>
+          </div>
           <!-- CHAMBA DE KATTY -->
-          <!-- GRÁFICO DE SPORTS -->
+          <!--Grafico por rango de Edad-->  
+          <div class="cajacontenedorag">
+          <h1>Gráfico por rango de Edad</h1>
+          <canvas id="chartAge" class="caja1"></canvas>
+          </div>
 
-           <canvas  id="ChartSport"></canvas>
+          <!-- GRÁFICO DE CANTIDAD DE PERSONAS QUE PARTICIPARON POR PAIS-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por cantidad de atletas por país</h1>
+          <canvas  id="chartCountry" class="caja1"></canvas>
+          </div>
 
-          <!-- INVESTIGAR HACER UN RANKING -->
+          <!-- GRÁFICO DE CANTIDAD DE PERSONAS POR DEPORTE-->
+          <div class="cajacontenedorag">
+          <h1>Gráfico por cantidad de atletas por deporte</h1>
+          <canvas  id="chartSport" class="caja1"></canvas>
+          </div>
 
-           <canvas  id="rankingEvent"></canvas>
+          <!-- RANKING DE PAISES CON MÁS MEDALLAS-->
+          <div class="cajacontenedorag">
+          <h1>Ranking de países que ganaron más medallas</h1>
+          <canvas  id="rankingDepor" class="caja1"></canvas>
+          </div>
+          <!-- RANKING DE DEPORTISTAS MUJERES CON MÁS MEDALLAS-->
+          <div class="cajacontenedorag">
+          <h1>Ranking de mujeres que ganaron más medallas</h1>
+          <canvas  id="rankingMujeres" class="caja1"></canvas>
+          </div>
 
 			</div> <!-- FIN  DEL CONTENT - DIV -->
 
@@ -163,6 +185,7 @@
 
 
     <script src="main.js"> </script>
+    <script src="/./src/js/data.js" type="module"></script>
 
     </body>
 
