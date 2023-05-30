@@ -79,8 +79,9 @@ footer {
 a {
 color: beige;
 font-family: monospace;
-text-decoration: double;
+text-decoration: none;
 font-size: 20px;
-margin: auto;
-display: flex;
+}
+.container {
+
 }

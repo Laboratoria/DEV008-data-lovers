@@ -74,13 +74,5 @@ footer {
     color: beige;
     position: absolute;
     bottom: 0%;
-}    
 
-a {
-color: beige;
-font-family: monospace;
-text-decoration: double;
-font-size: 20px;
-margin: auto;
-display: flex;
-}
+}    
