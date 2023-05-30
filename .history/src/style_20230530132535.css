@@ -1,0 +1,65 @@
+body {
+    background-image: url(fondo.jpg);
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: inline-block;
+    border: 1px double rgba(255, 255, 255, .25);
+    border-width: 1px 0;
+    padding: -5em 0em;
+    position: absolute;
+    top: 02%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+    /* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: beige;
+    text-align: left;
+    font-weight: bold;
+
+}
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(34, 151, 189);
+    text-align: left;
+    font-weight: bold;
+
+}
