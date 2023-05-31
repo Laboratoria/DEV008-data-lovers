@@ -77,21 +77,11 @@ a {
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-}
 
-/* Navegación*/
-
-ul {
-    font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
 }
-
-
 
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
