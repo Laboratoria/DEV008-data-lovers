@@ -46,9 +46,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 - Prototipo del Index
 
 
-  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/d7c6eb99-cb87-4d13-a1f6-0a5af3d9238e)
-
-  
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/d7c6eb99-cb87-4d13-a1f6-0a5af3d9238e)
+ 
 
   * Descripción:
 
@@ -56,7 +55,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de la Búsqueda
 
-  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4e1ce9a9-ec23-4ffc-a58f-10fcdfc2b045)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4e1ce9a9-ec23-4ffc-a58f-10fcdfc2b045)
 
   
 
@@ -66,7 +65,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de las Estadísticas
 
-  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/ad9bf233-f865-4e10-9760-eb48717643d9)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/ad9bf233-f865-4e10-9760-eb48717643d9)
 
 
   * Descripción:
@@ -76,7 +75,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 - Prototipo de los Testimonios
 
 
-  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/fbb31686-d9fc-4645-a1ce-3c296014c371)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/fbb31686-d9fc-4645-a1ce-3c296014c371)
 
   * Descripción:
 
@@ -85,6 +84,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Contacto
 
 - Prototipo de Contacto
+
+
 ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/123f8e4b-1171-4aeb-9917-910e842db5de)
 
   
@@ -105,6 +106,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo del Index
 
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/f3eedfbe-b7c0-405d-b025-15fe63ce8478)
+
   
 
   * Descripción:
@@ -113,6 +116,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de la Búsqueda
 
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/cb52a8f4-2ee3-446f-a156-1be5d266db29)
   
 
   * Descripción:
