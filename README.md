@@ -39,10 +39,14 @@ usuario necesita.
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
+
+
 ### Index
 
 - Prototipo del Index
-![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/eda7132a-3694-4176-8a8a-be77b55e9eef)
+
+
+  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/eda7132a-3694-4176-8a8a-be77b55e9eef)
 
   
 
@@ -51,7 +55,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Búsqueda
 
 - Prototipo de la Búsqueda
-![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4e1ce9a9-ec23-4ffc-a58f-10fcdfc2b045)
+
+  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4e1ce9a9-ec23-4ffc-a58f-10fcdfc2b045)
 
   
 
@@ -69,7 +74,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Testimonios
 
 - Prototipo de los Testimonios
-![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/fbb31686-d9fc-4645-a1ce-3c296014c371)
+
+  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/fbb31686-d9fc-4645-a1ce-3c296014c371)
 
   
 
@@ -83,6 +89,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
   
 
   * Descripción:
+
+###Versión responsiva
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/dc7b0ba8-ea36-48bc-8be2-7431e9feade5)
+
 
 
 ## 4. Prototipos de Alta fidelidad
