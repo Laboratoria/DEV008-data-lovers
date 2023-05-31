@@ -151,27 +151,46 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ### H.U Index
 
 - Pantalla final de index:
+
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/912806f7-0e7d-4883-97ad-662807a04f2a)
+
+
 - Historia de Usuario: 
 
 ### H.U Búsqueda
 
-- Pantalla final de index:
+- Pantalla final de la Búsqueda:
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4ebacf88-83ed-44c6-a696-c6bb10acccd4)
+
+
+
 - Historia de Usuario: 
 
 ### H.U Estadística
 
-- Pantalla final de index:
+- Pantalla final de Estadística
+
+
 - Historia de Usuario: 
 
 
 ### H.U Testimonio
 
-- Pantalla final de index:
+- Pantalla final de Testimonio:
+
+
 - Historia de Usuario: 
 
 ### H.U Contacto
 
-- Pantalla final de index:
+- Pantalla final de Contacto:
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/9deec8b0-cf8a-402e-8584-acaf95e3530a)
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/059e41f8-1848-4519-a705-c3c42b3d362e)
+
 - Historia de Usuario: 
 
 
