@@ -1,6 +1,11 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//import { data } from './data.js';  y aqui va la interración con el DOM
 
-console.log(example, data);
+import {alldata} from './data.js';
+import data from './data/ghibli/ghibli.js';
+
+
+
+
+
+
+//console.log(example, data.films);

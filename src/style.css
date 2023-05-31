@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/special/spe-2/spe113.ani), url(https://cur.cursors-4u.net/special/spe-2/spe113.png), auto;
+}
+
+/*html {
+    scroll-behavior: smooth;
+
+}*/
+
+:root {
+    /*--white-color: white;*/
+   
+    --clear--color: rgb(4, 118, 118);
+    
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+    font-size: 4.3rem;
+    color: #eeca06;
+}
+
+
+h2 {
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+
+h4 {
+    font-size: 2rem;
+}
+
+
+/*p {
+    display: flex;
+    font-size: 20rem;
+
+}*/
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-size: cover;
+    width: 100%;
+
+}
+
+
+.portada {
+ display: flex;
+    /* text-align: center; */
+    padding-top: 300px;
+    padding-right: 600px;
+    width: 85%;
+    position: absolute;
+    /* padding-inline-end: 200px; */
+    height: 140%;
+}
+
+.header p {
+    width: 100%;
+    color: aliceblue;
+    font-size: 2.1rem;
+    display: flex;
+    padding-left: 650px;
+    padding-top: 170px;
+}
+
+.portada img {
+
+    display: block;
+    width: 200px;
+    height: 200px;
+    /*position: absolute; /*Abstolute=posicionar donde le indiquemos, no esta fija*/
+    padding-left: 140px;
+}
+
+
+body {
+
+    background-color: #9370db;
+    font-family: sans-serif
+}
+
+
+button {
+    font-weight: bold;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(163, 225, 163);
+}
+
+
+button:hover {
+    background-color: rgb(15, 199, 15);
+}
+
+
+#Películas.carta {
+    background-position: center center;
+    background-size: cover;
+    padding: auto;
+}
+
+
+footer {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.5rem;
+
+}
