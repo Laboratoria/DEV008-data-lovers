@@ -42,6 +42,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Index
 
 - Prototipo del Index
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/eda7132a-3694-4176-8a8a-be77b55e9eef)
 
   
 
@@ -50,6 +51,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Búsqueda
 
 - Prototipo de la Búsqueda
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4e1ce9a9-ec23-4ffc-a58f-10fcdfc2b045)
 
   
 
@@ -59,13 +61,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de las Estadísticas
 
-  
+  ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/ad9bf233-f865-4e10-9760-eb48717643d9)
+
 
   * Descripción:
 
 ### Testimonios
 
 - Prototipo de los Testimonios
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/fbb31686-d9fc-4645-a1ce-3c296014c371)
 
   
 
@@ -74,6 +78,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Contacto
 
 - Prototipo de Contacto
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/123f8e4b-1171-4aeb-9917-910e842db5de)
 
   
 
