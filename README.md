@@ -125,6 +125,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de las Estadísticas
 
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/828023b0-a1cc-49a4-8796-6eaeae54fe35)
   
 
   * Descripción:
@@ -133,6 +134,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 - Prototipo de los Testimonios
 
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/42438657-4b93-4041-a260-8b43f4212600)
+
   
 
   * Descripción:
@@ -140,6 +143,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 ### Contacto
 
 - Prototipo de Contacto
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/48dd5e6c-b0c8-428c-a0ba-e57474e1f06c)
 
   
 
