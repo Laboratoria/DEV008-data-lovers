@@ -47,9 +47,7 @@ body {
 }
 
 
-/*
- * HEADER
- */
+/** HEADER **/
 
 .header {
   background-color: white;
@@ -62,9 +60,7 @@ body {
 }
 
 
-/*
- * Logo
- */
+/** Logo **/
  #logo-header {
 	float: left;
  /* padding: 15px 0 0 20px;*/
@@ -91,9 +87,7 @@ body {
 
 
 
-/*
- * Navegación
- */
+/**** Navegación ****/
 
 
 
@@ -149,7 +143,7 @@ body {
 }
 
 
-/*Inicio de footer*/
+/********* FOOTER **********/
 
 .footer{
   grid-area: 4 / 1 / 5 / 2;
@@ -335,7 +329,7 @@ body {
   font-size: 10px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* Estilos responsivo del footer */
 
 @media (max-width: 880px) {
 
@@ -525,7 +519,7 @@ article {
       }
     }
 
-/***************** estilos de busqueda*/
+/************** BUSQUEDA *************/
 
 .table-rwd {
   font-size: .85em;
@@ -569,37 +563,27 @@ article {
     position: absolute;
     background: #fff;
     width: 8em; }
-  .table-rwd th:first-child {
-    width: 8em; }
+  /*.table-rwd th:first-child {
+    width: 8em; }*/
   .table-rwd tr:hover td:first-child {
     background: #1A8CFF;
     color: #fff; }
-  .table-rwd tr:nth-child(2) td:first-child {
-    box-shadow: 0 -2.7em 0 -6px #1A8CFF, -6px -2.7em 0 -6px #1A8CFF; }
+  /*.table-rwd tr:nth-child(2) td:first-child {
+    box-shadow: 0 -2.7em 0 -6px #1A8CFF, -6px -2.7em 0 -6px #1A8CFF; }*/
+
+  
+  #resultado td {
+    max-height: 100%;
+    width: 200px;
+    height: 100px;
+
+  }
 
 
 
 /************ESTADÍSTICAS***************/
 
 
-
-/*#chart{
-  position: relative;
-  height: 10px;
-  width: 10px;
-  display:flex;
-  align-items: start;
-
-}
-#chartGender{
-  display:flex;
-  align-items: end;
-  height: 1px;
-  width: 2px;
-
-
-
-}*/
 
 .contenedor-cajas {
   display: flex;
@@ -633,8 +617,7 @@ article {
 
 
 
-/************C0NTACTOS***************/
-/************MAIN-004***************/
+/************C0NTACTO***************/
 
 #contact-form {
   width: 400px;
@@ -691,13 +674,6 @@ article {
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
 	transform: translateY(-7px);
 }
-
-
-/************CONTACTO***************/
-
-/************TESTIMONIOS***************/
-/************MAIN-005***************/
-
 
 
 /************TESTIMONIOS***************/
@@ -758,3 +734,48 @@ article {
 	text-align: center;
 	color: #454545;
 }
+
+/* ESTILOS RESPONSIVOS */ 
+/*Estilo responsivo index */ 
+
+@media screen and (max-width: 980px){
+  article .main{
+      width: 90%;
+  }
+  .navbar{
+      width:30%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .navbar{
+      height: auto;
+      width: 30%;
+  }
+  article .main {
+    width: 90%;
+  }
+  
+}
+
+/*Estilo responsivo busqueda */ 
+
+@media screen and (max-width: 980px){
+  article .main{
+      width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 480px){
+  .navbar{
+      height: auto;
+      width: 30%;
+  }
+  article .main {
+    width: 90%;
+  }
+  
+}
+
+
