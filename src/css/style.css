@@ -586,14 +586,16 @@ article {
 
 
 .contenedor-cajas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
 }
 
 .cajacontenedorag {
-  flex-basis: 75%;
   flex:1;
+  margin: 10px;
+  flex-basis: 75%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
   padding: 40px;
@@ -603,15 +605,14 @@ article {
   justify-content: center;
   align-items: center;
  /* height: 100vh;*/
-
-
 }
+
 
 
 
 .cajacontenedorag h1 {
   font-weight: inherit;
-  font-size: 150%;
+  font-size: 80%;
   font-style: normal;
   text-decoration: underline;
 }
@@ -621,6 +622,7 @@ article {
   height: 20%;
   margin: 0 auto;
   display: block;
+
 }
 
 #chartCountry,#chartSport{
@@ -708,12 +710,17 @@ article {
 	margin-top: 100px;
 	background: #fff;
 	padding: 30px 0;
-}
+  display: flex;
 
+}
+.testimonial-item{
+  flex:1;
+}
 .slider-testimonial{
 	width: 85%;
 	max-width: 1400px;
 	margin: auto;
+
 }
 
 .testimonial-client{
@@ -736,7 +743,7 @@ article {
 
 .client-name{
 	font-family: "Open sans";
-	font-weight: 600;
+	font-weight: 300;
 	text-align: center;
 }
 
@@ -746,8 +753,8 @@ article {
 
 .testimonial-text p{
 	font-family: "Open sans";
-	font-size: 25px;
-	font-weight: 400;
+	font-size: 16px;
+	font-weight: 150;
 	font-style: italic;
 	text-align: center;
 	color: #454545;
