@@ -607,10 +607,10 @@ article {
 }
 
 .cajacontenedorag {
-  flex-basis: 75%; 
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); 
-  margin-bottom: 25px; 
-  padding: 40px; 
+  flex-basis: 75%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  padding: 40px;
   margin-top: 20px;
   margin-left: 80px;
   margin-right: 15px;
@@ -702,11 +702,12 @@ article {
 
 /************TESTIMONIOS***************/
 
-#Test-img{
+.Test-img{
   height: 15%;
   width: 10%;
   display:flex;
-
+  align-items: center;
+  border-radius: 50%;
 }
 
 .wrapper{
