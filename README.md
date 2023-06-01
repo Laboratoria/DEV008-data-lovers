@@ -164,6 +164,8 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 * Pantalla final de Estadística
 
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/c311f5e3-6ea2-467d-8883-5d4d8e2e8226)
+
 * Historia de Usuario:
     *Como: Usuario
     *Quiero: Visualizar la información por de la siguiente forma:
