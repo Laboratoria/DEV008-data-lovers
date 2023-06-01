@@ -164,8 +164,11 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/912806f7-0e7d-4883-97ad-662807a04f2a)
 
 
-- Historia de Usuario: 
-
+- Historia de Usuario: 001
+    *Como: Usuario
+    *Quiero: Poder ver mis noticias actualizadas 
+    *Para poder: Estar al día con las noticias más relevantes de los deportistas de alto nivel
+   
 
 
 ### H.U Búsqueda
@@ -174,9 +177,14 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/4ebacf88-83ed-44c6-a696-c6bb10acccd4)
 
-
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/91a5a52c-3a5e-4113-b3cf-3d1dc2cb5b6d)
 
 - Historia de Usuario: 
+
+    *Como: Usuario
+    *Quiero: Realizar mis búsquedas de acuerdo a los filtros por genero(M,F o todos), por nombre de deportista, medalla(Oro,Bronce y/o Plata), deporte, equipo (país), evento o por rango de edad expresado en años. Este proceso de filtrado puede realizarse por un tipo de filtro o a mi elección
+    *Para poder: Visualizar a los deportistas de alto nivel y conocer sus caracteristicas físicas a detalle como peso o talla. 
+   
 
 ### H.U Estadística
 
@@ -184,7 +192,15 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 
 - Historia de Usuario: 
-
+    *Como: Usuario
+    *Quiero: Visualizar la información por de la siguiente forma:
+              -Gráfico por medallas obtenidas;
+              -Gráfico por genero;
+              -Gráfico por rango de edad;
+              -Gráfico por cantidad de atletas por país;
+              -Gráfico por cantidad de atletas por deporte;
+              -Gráfico de ranking de paises por medallas;
+    *Para poder: Visualizar a los deportistas de alto nivel con sus datos especificos de forma interactiva.
 
 ### H.U Testimonio
 
@@ -195,7 +211,10 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 
 - Historia de Usuario: 
-
+     *Como: Usuario
+     *Quiero: Visualizar los testimonios de los entrenadores que interactuaron con la página
+     *Para poder: Comprobar la utilidad de la página
+  
 ### H.U Contacto
 
 - Pantalla final de Contacto:
@@ -205,7 +224,9 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 ![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/059e41f8-1848-4519-a705-c3c42b3d362e)
 
 - Historia de Usuario: 
-
+     *Como: Usuario
+     *Quiero: Enviar un mensaje para entrar en contacto
+     *Para poder: Entrar en contacto con el administrador
 
 
 
