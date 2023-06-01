@@ -179,7 +179,7 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 * Pantalla final de Testimonio:
 
-![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/ccf2f2eb-a653-436a-bd4f-52afb868f1e4)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/14d5c3ee-aa69-462f-81b0-0dbea8bcad55)
 
 * Historia de Usuario:
      *Como: Usuario
