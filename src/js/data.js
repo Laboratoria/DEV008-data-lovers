@@ -1,5 +1,5 @@
 // estas funciones son de ejemplo
-import { athletes } from "/./src/js/athletes.js";
+import { athletes } from "./athletes.js";
 
 ///GRAFICO POR MEDALLAS
 
