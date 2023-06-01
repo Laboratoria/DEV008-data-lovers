@@ -164,7 +164,10 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
 
 * Pantalla final de Estadística
 
-![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/c311f5e3-6ea2-467d-8883-5d4d8e2e8226)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/f2f79f79-08dc-4ad2-ac89-5803414472d9)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/806035b8-7bfe-47b0-a2e1-67edaea76646)
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/f131807b-8a45-40d5-9781-1191940ad7c2)
+
 
 * Historia de Usuario:
     *Como: Usuario
