@@ -571,7 +571,7 @@ article {
   /*.table-rwd tr:nth-child(2) td:first-child {
     box-shadow: 0 -2.7em 0 -6px #1A8CFF, -6px -2.7em 0 -6px #1A8CFF; }*/
 
-  
+
   #resultado td {
     max-height: 100%;
     width: 200px;
@@ -588,10 +588,12 @@ article {
 .contenedor-cajas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cajacontenedorag {
   flex-basis: 75%;
+  flex:1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
   padding: 40px;
@@ -600,7 +602,9 @@ article {
   margin-right: 15px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+ /* height: 100vh;*/
+
+
 }
 
 
@@ -612,10 +616,23 @@ article {
   text-decoration: underline;
 }
 
+.caja1 {
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+  display: block;
+}
 
+#chartCountry,#chartSport{
+  width: 75%;
+  height: 75%;
 
+}
+#rankingDepor,#chartAge, #chart{
+  width: 50%;
+  height: 50%;
 
-
+}
 
 /************C0NTACTO***************/
 
@@ -736,8 +753,8 @@ article {
 	color: #454545;
 }
 
-/* ESTILOS RESPONSIVOS */ 
-/*Estilo responsivo index */ 
+/* ESTILOS RESPONSIVOS */
+/*Estilo responsivo index */
 
 @media screen and (max-width: 980px){
   article .main{
@@ -756,16 +773,16 @@ article {
   article .main {
     width: 90%;
   }
-  
+
 }
 
-/*Estilo responsivo busqueda */ 
+/*Estilo responsivo busqueda */
 
 @media screen and (max-width: 980px){
   article .main{
       width: 90%;
   }
-  
+
 }
 
 @media screen and (max-width: 480px){
@@ -776,7 +793,7 @@ article {
   article .main {
     width: 90%;
   }
-  
+
 }
 
 
