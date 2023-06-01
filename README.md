@@ -141,12 +141,20 @@ A continuación, serán mostradas los prototipos de Alta fidelidad bajo de las p
 
 ## 5. Requerimientos
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Los requerimientos son las caracteristicas propias que el producto digital debe de tener. En este caso, existen dos tipos: Los funcionales y no funcionales. En relación al primero son las acciones especificas de funcionalidad que debe tener y los no funcionales son las caracteristicas especificas que debe de tener, las cuales que se dividen en tres categorías: rendimiento, seguridad y calidad.
 
-###Requerimientos funcionales
--
+###Requerimientos funcionales 
+- El aplicativo Web debe ser responsivo;
+- El aplicativo Web tiene todos los enlaces conectados a las páginas correspondientes.
+
 ###Requerimientos no funcionales
--
+- El aplicativo Web debe ser fácil de usar;
+- Las interfaces debe ser intuitivas;
+- El aplicativo debe tener respuesta inmediata ante el uso;
+- El aplicativo tiene el logo y el icono en el header con la frase "Comite Olimpico";
+- El aplicativo mantiene la paleta de color uniforme;
+- El aplicativo mantiene la tipografía.
+
 
 ### H.U Index
 
@@ -157,6 +165,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 - Historia de Usuario: 
+
+
 
 ### H.U Búsqueda
 
@@ -179,6 +189,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ### H.U Testimonio
 
 - Pantalla final de Testimonio:
+
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/ccf2f2eb-a653-436a-bd4f-52afb868f1e4)
 
 
 - Historia de Usuario: 
