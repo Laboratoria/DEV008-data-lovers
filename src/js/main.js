@@ -1,4 +1,5 @@
 import { athletes } from "./athletes.js";
+import { getFilteredAthletes } from "./data.js";
 
 // Importa la base de datos desde athletes.js
 //buscar el boton y luego
@@ -207,18 +208,16 @@ function aplicarFiltros() {
   const selectedAgeMin = ageMinFilter.value;
   const selectedAgeMax = ageMaxFilter.value;
 
-  const filteredAthletes = athletes.filter((athlete) => {
-    return (
-      (selectedName === "" || athlete.name === selectedName) &&
-      (selectedGender === "" || athlete.gender === selectedGender) &&
-      (selectedMedal === "" || athlete.medal === selectedMedal) &&
-      (selectedTeam === "" || athlete.team === selectedTeam) &&
-      (selectedSport === "" || athlete.sport === selectedSport) &&
-      (selectedEvent === "" || athlete.event === selectedEvent) &&
-      (selectedAgeMin === "" || athlete.age >= parseInt(selectedAgeMin)) &&
-      (selectedAgeMax === "" || athlete.age <= parseInt(selectedAgeMax))
-    );
-  });
+  const filteredAthletes = getFilteredAthletes(selectedName,
+    selectedGender,
+    selectedMedal,
+    selectedTeam,
+    selectedSport,
+    selectedEvent,
+    selectedAgeMin,
+    ageMinFilter,
+    selectedAgeMax
+  );
 
   const table = document.getElementById("resultado");
   const tbody = table.getElementsByTagName("tbody")[0];
@@ -266,3 +265,5 @@ function aplicarFiltros() {
     tbody.appendChild(row);
   });
 }
+
+
