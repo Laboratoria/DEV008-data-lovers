@@ -6,7 +6,7 @@ import { athletes } from "./athletes.js";
 
 // Obtén la referencia al elemento canvas
 const canvas = document.getElementById("chart");
-const ctx = canvas.getContext("2d");nop
+const ctx = canvas.getContext("2d");
 
 // Obtén los datos de medallas de los atletas
 const medals = athletes.map((athlete) => athlete.medal);
