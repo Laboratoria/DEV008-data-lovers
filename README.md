@@ -7,6 +7,7 @@
 * [3. Prototipos de Baja fidelidad](#3-prototipos-de-baja-fidelidad)
 * [4. Prototipos de Alta fidelidad](#4-prototipos-de-alta-fidelidad)
 * [5. Requerimientos](#5-requerimientos)
+* [6. Pruebas Unitarias](#6-pruebas-unitarias)
 
 ***
 
@@ -203,3 +204,11 @@ Los requerimientos son las caracteristicas propias que el producto digital debe 
      *Como: Usuario
      *Quiero: Enviar un mensaje para entrar en contacto
      *Para poder: Entrar en contacto con el administrador
+
+***
+
+## 6. Pruebas unitarias
+
+Las pruebas unitarias se realizaron con éxito.
+
+![image](https://github.com/roxifochoag/DEV008-data-lovers/assets/46870050/f445380c-c292-4216-ba4d-3bdd763187cd)
