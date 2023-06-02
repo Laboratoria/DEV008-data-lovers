@@ -47,3 +47,47 @@ describe("getFilteredAthletes", () => {
   });
 });
 
+/// FILTRO DE 4 BRANCH //
+
+describe("getFilteredAthletes", () => {
+  it("is a function", () => {
+    expect(typeof getFilteredAthletes).toBe("function");
+  });
+
+  it("devuelve los filtros en base a los filtros proveidos", () => {
+    // Ejemplo de filtros seleccionados
+    const selectedGender = "M";
+    const selectedMedal = "Bronze";
+    const selectedTeam = "Egypt";
+    const selectedSport = "Weightlifting";
+
+    // Llamada a la función para obtener los atletas filtrados
+    const filteredAthletes = getFilteredAthletes(
+      "",
+      selectedGender,
+      selectedMedal,
+      selectedTeam,
+      selectedSport,
+      "",
+      "",
+      "",
+      ""
+    );
+
+    // Verificar si el resultado coincide con los atletas esperados después del filtrado
+    expect(filteredAthletes).toEqual([
+      {
+        name: "Mohamed Ihab Youssef Ahmed Mahmoud",
+        gender: "M",
+        height: "165",
+        weight: "77",
+        sport: "Weightlifting",
+        team: "Egypt",
+        noc: "EGY",
+        age: 26,
+        event: "Weightlifting Men's Middleweight",
+        medal: "Bronze"
+      },
+    ]);
+  });
+});
