@@ -1,3 +1,9 @@
+body {
+
+    background-color: #9370db;
+    font-family: sans-serif
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +36,8 @@ h1 {
 h2 {
     font-size: 3rem;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -37,12 +45,6 @@ h4 {
     font-size: 2rem;
 }
 
-
-/*p {
-    display: flex;
-    font-size: 20rem;
-
-}*/
 
 
 .header {
@@ -85,32 +87,18 @@ h4 {
 }
 
 
-body {
-
-    background-color: #9370db;
-    font-family: sans-serif
-}
-
-
 button {
     font-weight: bold;
     padding: 7px 20px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(163, 225, 163);
+    background-color: rgb(188, 153, 229);
 }
 
 
 button:hover {
-    background-color: rgb(15, 199, 15);
-}
-
-
-#Películas.carta {
-    background-position: center center;
-    background-size: cover;
-    padding: auto;
+    background-color: rgb(121, 10, 181);
 }
 
 
@@ -120,5 +108,17 @@ footer {
     text-align: center;
     line-height: 4rem;
     font-size: 1.5rem;
+
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    margin: 37px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
 
 }

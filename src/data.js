@@ -10,9 +10,17 @@ export const anotherExample = () => {
 };
 
 export function alldata() { //función que toma la informacion de la data
-  return data.ghibli
+  return data.films
 }
 
 //constante para hacer referencia a la funcion de tomar la data (alldata)
 const result = alldata ();
 console.log(result);
+
+//function tarjetas () 
+//const dataStudioGhibli = data.films;   {}
+//const displayCardGhibli = (ghibliData) => {}
+//ghibliData.forEach(arr) => {}
+//¿cómo visualizar los "posters"?
+
+

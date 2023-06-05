@@ -10,7 +10,8 @@
 
 <body>
   <header id="header" class="header">
-    <!-- <audio id="reproducer" src="img/Howls Moving Castle.mp3" autoplay="true"></audio> (../ buscar fuera de carpeta)-->
+    <audio id="music" src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3" autoplay="true"></audio>
+    <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
     <a href="index.html">
       <h1 id="header__h1">Multiverso Ghibli</h1>
     </a>
@@ -22,36 +23,73 @@
       <br />
       A continuación te mostramos las películas más relevantes.
     </p>
-      <img class="portada" src="./Portada/portadasin.png" alt="principal" /> <!--No es necesario poner un div o un articulo, bastan con img-->
+    <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+    <!--No es necesario poner un div o un articulo, bastan con img-->
   </header>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <main id="main__animations" class="main__animations">
+    <h2 id="animationsTitle">Películas destacadas</h2>
+    <div class="main__filtersAndCount">
+      <!--contador de peliculas-->
+      <p id="countFilms" class="countFilms"></p>
+      <div class="filters">
+        <select id="filters__director" class="filters__director">
+          <option selected value="all">Director</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Gorō Miyazaki">Goro Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+        </select>
+        <select id="filters__producer" class="filters__producer">
+          <option selected value="all">Productor</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+        <select id="filters__year" class="filters__year">
+          <option value="0">Más recientes</option>
+          <option value="1">Más antiguas</option>
+        </select>
+        <button type="button" id="clean">Limpiar filtros</button>
+      <label for="title">Buscar peliculas</label>
+        <input type="text" id="title" name="" required>
+    </div>
+    </div>
+  
+
+    <div class="animations" id="animations"></div>
+      <!-- Se crean las tarjetas de forma dinamica -->
+    
 
 
-
-
-  <section id="Películas">
+    <!-- <section id="Películas">
     <div class="container">
       <h2>Películas destacadas</h2>
       <div class="carta">
         <h4></h4>
-        <button> ▶Trailer</button> <!--Buscar icono del botón (https://emojikeyboard.io/)-->
+        <button> ▶Trailer</button> <<Buscar icono del botón (https://emojikeyboard.io/)
       </div>
-      <!--<div class="carta">
+      <div class="carta">
         <h4></h4>
         <button> ▶Trailer</button>
       </div>
@@ -127,18 +165,17 @@
         <h4></h4>
         <button> ▶Trailer</button>
       </div>
-    </div>-->
-  </section>
+    </div>
+  </section>-->
 
-
-
+  </main>
+  <hr>
+  <footer>
+    <div align="center">🔥🐱☔ &copy;Copyright Multiverso Ghibli a.c. 2023 Dany y Ceci 🐺🛩🐷</div>
+    <!--Se buscarón emojis (https://emojikeyboard.io/)-->
+  </footer>
+  <hr>
 
   <script src="main.js" type="module"></script>
 </body>
-<hr>
-<footer>
-  <div align="center">🔥🐱☔ &copy;Copyright Multiverso Ghibli a.c. 2023 Dany y Ceci 🐺🛩🐷</div> <!--Se buscarón emojis (https://emojikeyboard.io/)-->
-</footer>
-<hr>
-
 </html>
