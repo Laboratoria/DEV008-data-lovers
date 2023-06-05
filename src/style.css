@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background-image: url(./imagenes/nota-totoro-1.jpeg);
+}
+
+
+.encabezado{
+    background-image: radial-gradient(circle at -7.92% 9.44%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+ height: 80px;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+   margin: 0 auto;
+
+}
+
+.menu-link{
+    color:rgb(83, 92, 84) ;
+    text-decoration: none;
+
+}
+img{
+    max-width: 250%;
+    width: 290px;
+    height: 70px;
+    left: 50px;
+    margin: 0px 0px; 
+    padding: 0px 0px;
+    border-radius:0px;
+    
+}
+
+.menu1{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+ 
+.link{
+  font-size: 18px;
+  margin: 0 10px; 
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+.link1{
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.link1:hover {
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+transition:0.3s ;
+
+}
+.input {
+    background-color: rgba(60, 177, 130, 0.747);  
+ height: 20px;
+ position:fixed;
+ width: 15%;
+ top: 30px;
+ left: 900px;
+}
+.btn{
+    background-image: url(./imagenes/search_FILL0_wght400_GRAD0_opsz48.png); 
+    height: 40px;
+    position:fixed;
+    width: 3%;
+    top:20px;
+    left: 1120px; 
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
