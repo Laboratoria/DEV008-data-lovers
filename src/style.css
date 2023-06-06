@@ -112,13 +112,15 @@ footer {
 }
 
 .card {
-    width: 300px;
-    height: 350px;
+    width: 270px;
+    height: 320px;
     margin: 37px;
 }
 
-.filters{
+.main__filtersAndCount{
     display: flex;
     justify-content: center;
+    padding: 5px 12px
+   
 
 }

@@ -30,18 +30,6 @@
   <br />
   <br />
   <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
 
   <main id="main__animations" class="main__animations">
     <h2 id="animationsTitle">Películas destacadas</h2>
@@ -49,6 +37,9 @@
       <!--contador de peliculas-->
       <p id="countFilms" class="countFilms"></p>
       <div class="filters">
+        <label for="title">Buscar peliculas</label> 
+        <input type="text" id="title" placeholder="título" name="" required value=""/>
+        <button type="button" id="buscar">Buscar</button>
         <select id="filters__director" class="filters__director">
           <option selected value="all">Director</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -71,8 +62,7 @@
           <option value="1">Más antiguas</option>
         </select>
         <button type="button" id="clean">Limpiar filtros</button>
-      <label for="title">Buscar peliculas</label>
-        <input type="text" id="title" name="" required>
+      
     </div>
     </div>
   
