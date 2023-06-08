@@ -13,15 +13,15 @@
     <audio id="music" src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3" autoplay="true"></audio>
     <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
     <a href="index.html">
-      <h1 id="header__h1">Multiverso Ghibli</h1>
+      <h1 id="header__h1">Ghibli Multiverse</h1>
     </a>
-    <p class="header__p">Ghibli (スタジオジブリ ) es un estudio de animación japonés considerado por la crítica especializada y
-      muchos cinéfilos como uno de los mejores estudios de animación del mundo.
+    <p class="header__p">Ghibli (スタジオジブリ ) is a Japanese animation studio considered by critics and
+      many moviegoers as one of the best animation studios in the world.
       <br />
-      El estudio es conocido por sus largometrajes animados y también ha producido varios cortometrajes para
-      televisión.
+      The studio is known for its animated feature films and has also produced several short films for
+      television.
       <br />
-      A continuación te mostramos las películas más relevantes.
+      Below, you will find more info about this amazing movies.
     </p>
     <img class="portada" src="./Portada/portadasin.png" alt="principal" />
     <!--No es necesario poner un div o un articulo, bastan con img-->
@@ -32,14 +32,15 @@
   <br />
 
   <main id="main__animations" class="main__animations">
-    <h2 id="animationsTitle">Películas destacadas</h2>
+    <h2 id="animationsTitle">Movie list</h2>
+   <br> 
     <div class="main__filtersAndCount">
       <!--contador de peliculas-->
       <p id="countFilms" class="countFilms"></p>
       <div class="filters">
-        <label for="title">Buscar peliculas</label> 
-        <input type="text" id="title" placeholder="título" name="" required value=""/>
-        <button type="button" id="buscar">Buscar</button>
+        <label for="title">Search movies</label> 
+        <input type="text" id="title" placeholder="title" name="" required value=""/>
+        <button type="button" id="search">Search</button>
         <select id="filters__director" class="filters__director">
           <option selected value="all">Director</option>
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -50,7 +51,7 @@
           <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
         </select>
         <select id="filters__producer" class="filters__producer">
-          <option selected value="all">Productor</option>
+          <option selected value="all">Producer</option>
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Toshio Suzuki">Toshio Suzuki</option>
           <option value="Toru Hara">Toru Hara</option>
@@ -58,10 +59,10 @@
           <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
         </select>
         <select id="filters__year" class="filters__year">
-          <option value="0">Más recientes</option>
-          <option value="1">Más antiguas</option>
+          <option value="0">More recent</option>
+          <option value="1">Older</option>
         </select>
-        <button type="button" id="clean">Limpiar filtros</button>
+        <button type="button" id="clean">clean</button>
       
     </div>
     </div>
@@ -161,7 +162,7 @@
   </main>
   <hr>
   <footer>
-    <div align="center">🔥🐱☔ &copy;Copyright Multiverso Ghibli a.c. 2023 Dany y Ceci 🐺🛩🐷</div>
+    <div align="center">🔥🐱☔ &copy;Copyright Ghibli Multiverse a.c. 2023 Dany & Ceci 🐺🛩🐷</div>
     <!--Se buscarón emojis (https://emojikeyboard.io/)-->
   </footer>
   <hr>

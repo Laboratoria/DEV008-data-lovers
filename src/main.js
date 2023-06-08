@@ -4,7 +4,7 @@ import { allData,filterDataDirector, filterDataProducer,  sortDataYear } from '.
 //import data from './data/ghibli/ghibli.js';
 
 const reproducer = document.getElementById("reproducer");
-//reproducer.volume = 0.03; //5% de volumen
+//reproducer.volume = 0.05; //5% de volumen
 
 const cardcontainer = document.getElementById("animations");
 const allTheMovies = allData();
@@ -62,3 +62,30 @@ filterXProducer.addEventListener('change', () => {
     
   }
    })
+
+
+   const btnClean = document.getElementById('clean');
+   btnClean.addEventListener('click', (e) => {
+    e.preventDefault();
+    filterXDirector.value = 'all';
+    filterXProducer.value = 'all';
+    filterYear.value = 'all';
+    //seguir evaluando
+    showMovies(allTheMovies);
+})
+
+
+
+
+   
+/*const searchMovie = document.getElementById("search");
+searchMovie.addEventListener("input", searchMovie);
+function searchMovie() {
+  movieSection.innerHTML = "";
+  // Agregar código para traer el input text, y sacar el texto de búsqueda
+  const searchValue = document.getElementById("search").value;
+  let filteredSearch = null;
+  // Agregar código para filtrar por título (solo por mientras, luego por más propiedades)
+  filteredSearch = data.films.filter(film => film["title"].toLowerCase().includes(searchValue.toLowerCase()));
+  searchMovie(filteredSearch)
+}*/
