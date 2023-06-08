@@ -25,8 +25,8 @@ function pintarPosters(listaDePeliculas) { //estoy pintando los posters para eso
     año.classList.add("soloAño")
     
     caja.appendChild(posters);//appendChild hace la magia "interaccion con el DOM"
-    caja.appendChild(titulo);
-    caja.appendChild(año);
+    document.getElementById("caja").appendChild(titulo);
+    document.getElementById("caja").appendChild(año);
     document.getElementById("animations").appendChild(caja);
   }
   return

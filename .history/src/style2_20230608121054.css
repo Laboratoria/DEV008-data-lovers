@@ -160,7 +160,7 @@ button {
     
     color: #484855;
     border-radius: 3px 0 0 3px;
-    background-color: #3393c7bd;
+    background-color: rgba(86, 143, 200, 0.949);
 
 }
 
@@ -177,7 +177,7 @@ button {
     
     color: #484855;
     border-radius: 3px 0 0 3px;
-    background-color: #3393c7bd;
+    background-color: rgba(86, 143, 200, 0.949);/* ;*/
     box-shadow: 10px 15px 15px rgb(100, 86, 86);
 
 }
@@ -186,12 +186,12 @@ button {
 
 
 
-footer {
+/*footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 10px;
+    font-size: 13px;
     border-color: black;
-    background-color: #111111bd;
+    background-color: black;
     color: beige;
+    position: absolute;
     bottom: 0%;
-    margin: 20px;
-}
+}*/
