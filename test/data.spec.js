@@ -1,23 +1,32 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterDataDirector } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('Casos de prueba para la funcion de filtrado de director', () => {
+  it('dada una coleccion de peliculas y un nombre de director nos debe retornar solo peliculas de ese director', () => {
+    const peliculas = [
+      { 
+        director: "Dan"
+      },
+      { 
+        director: "Carlos"
+      },
+      { 
+        director: "Camila"
+      }
+    ]
+
+    const director = 'Dan'
+    expect(filterDataDirector(peliculas, director)).toEqual([{director:'Dan'}])
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('SI peliculas no es un array debe retornar un arreglo vacio', () => {
+    const director = 'Dan'
+    expect(filterDataDirector(null, director)).toEqual([])
   });
+
+
+
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});

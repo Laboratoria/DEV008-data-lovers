@@ -10,36 +10,39 @@
 
 <body>
   <header id="header" class="header">
-    <audio id="music" src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3" autoplay="true"></audio>
+    <audio id="music" src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3"
+      autoplay="true"></audio>
     <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
-    <a href="index.html">
-      <h1 id="header__h1">Ghibli Multiverse</h1>
-    </a>
-    <p class="header__p">Ghibli (スタジオジブリ ) is a Japanese animation studio considered by critics and
-      many moviegoers as one of the best animation studios in the world.
-      <br />
-      The studio is known for its animated feature films and has also produced several short films for
-      television.
-      <br />
-      Below, you will find more info about this amazing movies.
-    </p>
-    <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+    <!--<a href="index.html">
+
+    </a>-->
+    <h1>Ghibli Multiverse</h1>
+    <div class = "flex">
+      <div>
+        <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+      </div>
+      <div class="texto">
+        <p> Ghibli (スタジオジブリ ) is a Japanese animation studio considered by critics and
+          many moviegoers as one of the best animation studios in the world.</p>
+        <p> The studio is known for its animated feature films and has also produced several short films for
+          television.</p>
+        <p>Below, you will find more info about this amazing movies.</p>
+      </div>
+    
+    </div>
     <!--No es necesario poner un div o un articulo, bastan con img-->
   </header>
-  <br />
-  <br />
-  <br />
-  <br />
+
 
   <main id="main__animations" class="main__animations">
     <h2 id="animationsTitle">Movie list</h2>
-   <br> 
+    <br>
     <div class="main__filtersAndCount">
       <!--contador de peliculas-->
       <p id="countFilms" class="countFilms"></p>
       <div class="filters">
-        <label for="title">Search movies</label> 
-        <input type="text" id="title" placeholder="title" name="" required value=""/>
+        <label for="title">Search movies</label>
+        <input type="text" id="title" placeholder="title" name="" required value="" />
         <button type="button" id="search">Search</button>
         <select id="filters__director" class="filters__director">
           <option selected value="all">Director</option>
@@ -63,14 +66,14 @@
           <option value="1">Older</option>
         </select>
         <button type="button" id="clean">clean</button>
-      
+
+      </div>
     </div>
-    </div>
-  
+
 
     <div class="animations" id="animations"></div>
-      <!-- Se crean las tarjetas de forma dinamica -->
-    
+    <!-- Se crean las tarjetas de forma dinamica -->
+
 
 
     <!-- <section id="Películas">
@@ -169,4 +172,5 @@
 
   <script src="main.js" type="module"></script>
 </body>
+
 </html>

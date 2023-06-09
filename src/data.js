@@ -16,6 +16,9 @@ export function allData() { //función que toma la informacion de la data
 
 //filtro por director
 export const filterDataDirector = (data, nameDirector) => {
+  if(!Array.isArray(data)){
+    return []
+  }
   const newDataDirector = data.filter(movie => movie.director == nameDirector);
   return newDataDirector;
 }
@@ -41,7 +44,8 @@ export const sortDataYear = (data, key) => {
 
 //constante para hacer referencia a la funcion de tomar la data (alldata)
 const result = allData ();
-console.log(result);
+
+//console.log(result);
 
 //function tarjetas () 
 //const dataStudioGhibli = data.films;   {}

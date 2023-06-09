@@ -24,6 +24,10 @@ body {
     
 }
 
+.flex{
+display: flex;
+}
+
 h1 {
 
     display: flex;
@@ -58,24 +62,29 @@ h4 {
 
 
 .portada {
- display: flex;
+/* display: flex; */
     /* text-align: center; */
-    padding-top: 300px;
-    padding-right: 600px;
-    width: 85%;
-    position: absolute;
+    /* padding-top: 300px;
+    padding-right: 600px; */
+    width: 300px;
     /* padding-inline-end: 200px; */
-    height: 140%;
+    
+}
+.texto {
+    padding-top: 150px; 
+    color: aliceblue;
+    font-size: 2rem;
+    padding-right: 50px;
 }
 
-.header p {
+/*.header p {
     width: 100%;
     color: aliceblue;
     font-size: 2.1rem;
     display: flex;
     padding-left: 650px;
     padding-top: 170px;
-}
+}*/
 
 .portada img {
 
@@ -111,11 +120,32 @@ footer {
 
 }
 
+.animations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .card {
     width: 270px;
     height: 320px;
     margin: 37px;
+    border: black 2px solid;
+    border-radius: 5px;
+    
+
 }
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+
 
 .main__filtersAndCount{
     display: flex;
