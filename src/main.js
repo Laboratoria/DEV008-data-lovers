@@ -25,13 +25,19 @@ function showMovies(movieList) {
         titulo.textContent = movie.title;
         const descripcion = document.createElement("p")
         descripcion.textContent = movie.description;
+        const director = document.createElement("p")
+        director.textContent = movie.director;
         const productor = document.createElement("p")
         productor.textContent = movie.producer;
+        const año = document.createElement("p")
+        año.textContent = movie.release_date;
 
 
         segundoContenedor.appendChild(titulo)
         segundoContenedor.appendChild(descripcion)
+        segundoContenedor.appendChild(director)
         segundoContenedor.appendChild(productor)
+        segundoContenedor.appendChild(año)
 
 
 
