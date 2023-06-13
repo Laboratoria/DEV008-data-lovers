@@ -1,176 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverso Ghibli</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiverso Ghibli</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header id="header" class="header">
-    <audio id="music" src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3"
-      autoplay="true"></audio>
-    <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
-    <!--<a href="index.html">
+  <body>
+    <header id="header" class="header">
+      <audio
+        id="music"
+        src="../src/Musica/Howls_Moving_Castle_-_Merry_go_round_of_Life_cover_by_Grissini_Project.mp3"
+        autoplay="true"
+      ></audio>
+      <!-- (../ buscar fuera de carpeta) https://onlinevideoconverter.com/es -->
+      <!--<a href="index.html">
 
     </a>-->
-    <h1>Ghibli Multiverse</h1>
-    <div class = "flex">
-      <div>
-        <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+      <h1>Ghibli Multiverse</h1>
+      <div class="flex">
+        <div>
+          <img class="portada" src="./Portada/portadasin.png" alt="principal" />
+        </div>
+        <div class="texto">
+          <p>
+            Ghibli (スタジオジブリ ) is a Japanese animation studio considered
+            by critics and many moviegoers as one of the best animation studios
+            in the world.
+          </p>
+          <p>
+            The studio is known for its animated feature films and has also
+            produced several short films for television.
+          </p>
+          <p>Below, you will find more info about this amazing movies.</p>
+        </div>
       </div>
-      <div class="texto">
-        <p> Ghibli (スタジオジブリ ) is a Japanese animation studio considered by critics and
-          many moviegoers as one of the best animation studios in the world.</p>
-        <p> The studio is known for its animated feature films and has also produced several short films for
-          television.</p>
-        <p>Below, you will find more info about this amazing movies.</p>
-      </div>
-    
-    </div>
-  
-  </header>
+    </header>
 
+    <main id="main__animations" class="main__animations">
+      <h2 id="animationsTitle">Movie list</h2>
+      <br />
+      <div class="main__filtersAndCount">
+        <!--contador de peliculas-->
+        <p id="countFilms" class="countFilms"></p>
+        <div class="filters">
+          <label for="title">Search movies</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="title"
+            name=""
+            required
+            value=""
+          />
+          <button type="button" id="search">Search</button>
+          <select id="filters__director" class="filters__director">
+            <option selected value="all">Director</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Gorō Miyazaki">Goro Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+          </select>
+          <select id="filters__producer" class="filters__producer">
+            <option selected value="all">Producer</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Toshio Suzuki">Toshio Suzuki</option>
+            <option value="Toru Hara">Toru Hara</option>
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+          </select>
+          <select id="filters__year" class="filters__year">
+            <option value="0">More recent</option>
+            <option value="1">Older</option>
+          </select>
+          <button type="button" id="clean">clean</button>
+        </div>
+      </div>
 
-  <main id="main__animations" class="main__animations">
-    <h2 id="animationsTitle">Movie list</h2>
-    <br>
-    <div class="main__filtersAndCount">
-      <!--contador de peliculas-->
-      <p id="countFilms" class="countFilms"></p>
-      <div class="filters">
-        <label for="title">Search movies</label>
-        <input type="text" id="title" placeholder="title" name="" required value="" />
-        <button type="button" id="search">Search</button>
-        <select id="filters__director" class="filters__director">
-          <option selected value="all">Director</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Gorō Miyazaki">Goro Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
-        </select>
-        <select id="filters__producer" class="filters__producer">
-          <option selected value="all">Producer</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Toshio Suzuki">Toshio Suzuki</option>
-          <option value="Toru Hara">Toru Hara</option>
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-        </select>
-        <select id="filters__year" class="filters__year">
-          <option value="0">More recent</option>
-          <option value="1">Older</option>
-        </select>
-        <button type="button" id="clean">clean</button>
+      <div class="animations" id="animations"></div>
+      <!-- Se crean las tarjetas de forma dinamica -->
+    </main>
+    <hr />
+    <footer>
+      <div align="center">
+        🔥🐱☔ &copy;Copyright Ghibli Multiverse a.c. 2023 Dany & Ceci 🐺🛩🐷
+      </div>
+      <!--Se buscarón emojis (https://emojikeyboard.io/)-->
+    </footer>
+    <hr />
 
-      </div>
-    </div>
-
-
-    <div class="animations" id="animations"></div>
-    <!-- Se crean las tarjetas de forma dinamica -->
-
-
-
-    <!-- <section id="Películas">
-    <div class="container">
-      <h2>Películas destacadas</h2>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button> <<Buscar icono del botón (https://emojikeyboard.io/)
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button>▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button>▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button>▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-      <div class="carta">
-        <h4></h4>
-        <button> ▶Trailer</button>
-      </div>
-    </div>
-  </section>-->
-
-  </main>
-  <hr>
-  <footer>
-    <div align="center">🔥🐱☔ &copy;Copyright Ghibli Multiverse a.c. 2023 Dany & Ceci 🐺🛩🐷</div>
-    <!--Se buscarón emojis (https://emojikeyboard.io/)-->
-  </footer>
-  <hr>
-
-  <script src="main.js" type="module"></script>
-</body>
-
+    <script src="main.js" type="module"></script>
+  </body>
 </html>
