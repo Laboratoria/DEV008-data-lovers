@@ -1,0 +1,101 @@
+body{
+    background-image: url(https://images2.alphacoders.com/126/1260061.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+header{
+    background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
+    background-size: 100px;
+    background-position: center top;
+    text-align: center;
+    color:rgb(135, 143, 150);
+    font-size: 50px;
+    position: sticky;
+    top:10 ;
+    border-radius: 55px;
+}
+
+
+
+nav{
+    border-radius: 8px;
+    text-align: center;
+
+}
+select{
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+input{
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+button{
+
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #be6161,
+        rgb(133, 39, 39),
+        #ebc9a3
+    );
+    border-radius: 8px;
+    color:antiquewhite;
+    font-size: 14px;
+    padding: 4px;
+    color:rgb(175, 156, 156);
+    cursor: pointer;
+    transition: .2s;
+}
+
+span{
+    background-color: rgb(36, 23, 23);
+    padding: 3px 15px;
+    border-radius: 6px;
+    transition: 3s;
+}
+        
+button:hover span {
+    background: none;
+    
+
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+section{
+    color: aliceblue;
+    align-items: right;
+    float: left;
+    padding: 25px;
+	text-align: justify;
+	width: 20%;
+    background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
+
+}
+
+
+.card{
+    color: aliceblue;
+    float: left;
+    padding: 25px;
+	-ms-flex-item-align:center;
+    width:200px;
+    height: 400px;
+    background: linear-gradient(rgba(14, 16, 22, 0.75),rgba(42, 46, 56, 0.75));
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 16px;
+}
+.card:hover,
+section:active{
+    background: rgb(41, 29, 29);
+}
+
