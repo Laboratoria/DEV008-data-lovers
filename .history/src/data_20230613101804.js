@@ -39,31 +39,4 @@ export const orderData2 = (arrayData2) => {
   });
   return arrayData2;
 };
-//Ordenado por fechas 
-export const orderFecha = (arrayFecha) => {
-  arrayFecha.sort(function (a, b) {
-    if (a.release_date > b.release_date) {
-      return 1;
-    }
-    if (a.release_date < b.release_date) {
-      return -1;
-    }
-  
-    return 0;
-  });
-  return arrayFecha;
-};
 
-export const orderFecha2 = (arrayFecha2) => {
-  arrayFecha2.sort(function (a, b) {
-    if (a.release_date < b.release_date) {
-      return 1;
-    }
-    if (a.release_date >  b.release_date) {
-      return -1;
-    }
-  
-    return 0;
-  });
-  return arrayFecha2;
-};

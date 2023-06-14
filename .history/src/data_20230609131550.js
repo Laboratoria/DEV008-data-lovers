@@ -13,6 +13,8 @@ console.log(result);
 //2. 0.... quedaria igual 
 //3. > 0 .... entonces pondra primero b
 export const orderData = (arrayData) => {
+  console.log(arrayData)
+
   arrayData.sort(function (a, b) {
     if (a.title > b.title) {
       return 1;
@@ -27,6 +29,8 @@ export const orderData = (arrayData) => {
 };
 
 export const orderData2 = (arrayData2) => {
+  console.log(arrayData2)
+
   arrayData2.sort(function (a, b) {
     if (a.title < b.title) {
       return 1;
@@ -37,33 +41,6 @@ export const orderData2 = (arrayData2) => {
   
     return 0;
   });
-  return arrayData2;
-};
-//Ordenado por fechas 
-export const orderFecha = (arrayFecha) => {
-  arrayFecha.sort(function (a, b) {
-    if (a.release_date > b.release_date) {
-      return 1;
-    }
-    if (a.release_date < b.release_date) {
-      return -1;
-    }
-  
-    return 0;
-  });
-  return arrayFecha;
+  return arrayData;
 };
 
-export const orderFecha2 = (arrayFecha2) => {
-  arrayFecha2.sort(function (a, b) {
-    if (a.release_date < b.release_date) {
-      return 1;
-    }
-    if (a.release_date >  b.release_date) {
-      return -1;
-    }
-  
-    return 0;
-  });
-  return arrayFecha2;
-};

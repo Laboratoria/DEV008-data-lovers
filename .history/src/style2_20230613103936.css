@@ -34,7 +34,7 @@ h2 {
 }
 
 .filters__director {
-    width: 250px;
+    width: 150px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
     border-radius: 20px;
@@ -48,13 +48,13 @@ h2 {
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
-    margin: auto;
+    margin: 10px;
     box-shadow: 10px 5px 5px black;
     border-color: beige;
 }
 
 .filters__producer {
-    width: 250px;
+    width: 150px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
     border-radius: 20px;
@@ -68,7 +68,7 @@ h2 {
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
-    margin: auto;
+    margin: 10px;
     box-shadow: 10px 5px 5px black;
     border-color: beige;
 }
@@ -88,7 +88,7 @@ h2 {
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: bold;
-    margin: auto;
+    margin: 10px;
     border-color: beige;
     box-shadow: 10px 5px 5px black;
 }
@@ -109,7 +109,7 @@ h2 {
     text-align: left;
     font-weight: bold;
     border-color: beige;
-    margin: auto;
+    margin: 20px;
     box-shadow: 10px 5px 5px black;
 }
 
@@ -124,25 +124,22 @@ button {
     color: black;
     border-color: beige;
     box-shadow: 10px 5px 5px black;
-    margin: auto;
+    margin: 10px;
 }
 
 .animations {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    /* flex-direction: row;
-    flex-wrap: wrap;*/
-    grid-column-gap: 20px;
-    align-content: center;
-    /* order: 5;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 5;
 }
 
-
 .soloPosters {
-    text-align: center;
+    text-align:center;
     font-weight: bolder;
-    width:350px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -152,18 +149,15 @@ button {
 
 
 .soloTitulo {
-    
-    width: 380px;
-    height: 20px;
     font-weight: bold;
-    margin: 5px;
-    text-align: center;
-    padding: 3px;
-    font-size: 20px;
+    margin: 15px;
+    text-align:center;
+    padding: 10px;
+    font-size: 27px;
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: 2px;
-
+    
     color: #484855;
     border-radius: 3px 0 0 3px;
     background-color: #3393c7bd;
@@ -172,17 +166,15 @@ button {
 
 .soloAño {
 
-    width: 380px;
-    height: 20px;
     font-weight: bold;
-    margin: 5px;
-    text-align: center;
-    padding: 3px;
-    font-size: 20px;
+    margin: 15px;
+    text-align:center;
+    padding: 5px;
+    font-size: 27px;
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: 2px;
-
+    
     color: #484855;
     border-radius: 3px 0 0 3px;
     background-color: #3393c7bd;
@@ -192,62 +184,6 @@ button {
 
 
 
-.soloDescripcion {
-
-    text-align: justify;
-    font-weight: bolder;
-    width: 300px;
-    height: 220px;
-    border: 2px;
-    margin: auto;
-    padding: 20px;
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    letter-spacing: 2px;
-    color: #484855;
-    border-radius: 3px 0 0 3px;
-    background-color: #3393c7bd;
-   
-}
-
-.soloDirectores {
-
-    text-align: center;
-    font-weight: bolder;
-    width: 300px;
-    height: 75px;
-    border: 2px;
-    margin: auto;
-    padding: 20px;
-    font-size: 17px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    letter-spacing: 2px;
-    color: #484855;
-    border-radius: 3px 0 0 3px;
-    background-color: #3393c7bd;
-}
-
-.soloProductores {
-
-    text-align: center;
-    font-weight: bolder;
-    width: 300px;
-    height: 75px;
-    border: 2px;
-    margin: auto;
-    padding: 20px;
-    font-size: 17px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    letter-spacing: 2px;
-    color: #484855;
-    border-radius: 3px 0 0 3px;
-    background-color: #3393c7bd;
-    box-shadow: 10px 15px 15px rgb(100, 86, 86);
-
-}
 
 
 footer {

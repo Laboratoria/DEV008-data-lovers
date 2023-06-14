@@ -45,7 +45,7 @@ function pintarPosters(listaDePeliculas) { //estoy pintando los posters para eso
 
     const productores = document.createElement("p")
     productores.innerText = pelis.producer;
-    productores.classList.add("soloProductores")
+    productores.classList.add("soloPoductores")
 
 
     caja2.appendChild(descripcion);//appendChild hace la magia "interaccion con el DOM"

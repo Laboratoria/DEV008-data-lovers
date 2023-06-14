@@ -40,7 +40,7 @@ function pintarPosters(listaDePeliculas) { //estoy pintando los posters para eso
     descripcion.classList.add("soloDescripcion")
 
     const directores = document.createElement("p")
-    directores.innerText = pelis.director;
+    directores.innerText = pelis.director & Director;
     directores.classList.add("soloDirectores")
 
     const productores = document.createElement("p")

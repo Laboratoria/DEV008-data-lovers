@@ -129,7 +129,7 @@ button {
 
 .animations {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     /* flex-direction: row;
     flex-wrap: wrap;*/
     grid-column-gap: 20px;
@@ -141,8 +141,8 @@ button {
 .soloPosters {
     text-align: center;
     font-weight: bolder;
-    width:350px;
-    height: 400px;
+    width: 350px;
+    height: 550px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -152,14 +152,11 @@ button {
 
 
 .soloTitulo {
-    
-    width: 380px;
-    height: 20px;
     font-weight: bold;
-    margin: 5px;
+    margin: 15px;
     text-align: center;
-    padding: 3px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 27px;
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: 2px;
@@ -172,13 +169,11 @@ button {
 
 .soloAño {
 
-    width: 380px;
-    height: 20px;
     font-weight: bold;
-    margin: 5px;
+    margin: 15px;
     text-align: center;
-    padding: 3px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 27px;
     margin-top: 0px;
     margin-bottom: 0px;
     letter-spacing: 2px;
@@ -194,29 +189,29 @@ button {
 
 .soloDescripcion {
 
-    text-align: justify;
+    text-align: center;
     font-weight: bolder;
-    width: 300px;
-    height: 220px;
+    width: 450px;
+    height: 250px;
     border: 2px;
     margin: auto;
     padding: 20px;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 20px;
     margin-bottom: 0px;
     letter-spacing: 2px;
     color: #484855;
     border-radius: 3px 0 0 3px;
     background-color: #3393c7bd;
-   
+    box-shadow: 10px 15px 15px rgb(100, 86, 86);
 }
 
 .soloDirectores {
 
     text-align: center;
     font-weight: bolder;
-    width: 300px;
-    height: 75px;
+    width: 450px;
+    height: 100px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -233,8 +228,8 @@ button {
 
     text-align: center;
     font-weight: bolder;
-    width: 300px;
-    height: 75px;
+    width: 450px;
+    height: 100px;
     border: 2px;
     margin: auto;
     padding: 20px;

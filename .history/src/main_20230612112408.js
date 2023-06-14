@@ -2,7 +2,7 @@
 //Manipulación dinamica del DOM 
 //import { example } from './data.js';
 
-import { allData, orderData, orderData2, orderFecha, orderFecha2} from './data.js';
+import { allData, orderData, orderData2 } from './data.js';
 const contenedorDePortadas = document.getElementById("animations");//para vincular el primer contenedor con el DOM
 const arrayObjetos = allData();//vinculando toda la data a al primer contenedor 
 
@@ -30,31 +30,6 @@ function pintarPosters(listaDePeliculas) { //estoy pintando los posters para eso
     caja.appendChild(titulo);
     caja.appendChild(año);
     document.getElementById("animations").appendChild(caja);
-
-  
-  
-    const caja2 = document.createElement("div");
-    
-    const descripcion = document.createElement("p")
-    descripcion.innerText = pelis.description;
-    descripcion.classList.add("soloDescripcion")
-
-    const directores = document.createElement("p")
-    directores.innerText = pelis.director;
-    directores.classList.add("soloDirectores")
-
-    const productores = document.createElement("p")
-    productores.innerText = pelis.producer;
-    productores.classList.add("soloProductores")
-
-
-    caja2.appendChild(descripcion);//appendChild hace la magia "interaccion con el DOM"
-    caja2.appendChild(directores);
-    caja2.appendChild(productores);
-
-    document.getElementById("animations").appendChild(caja2);
-
-
   }
   return
 
@@ -72,41 +47,32 @@ filtroaz.addEventListener('change', () => {
     pintarPosters(az)
     break;
   case '1':
-    const za = orderData2(arrayObjetos)
+    const za = orderData(arrayObjetos)
     pintarPosters(za)
     break;
 
   }
 })
+/*document.getElementById("filters__initial").addEventListener("click", function () {
+  console.log(this.value) //magico this es el select, entonces me trae el elemento 
 
 
-//Ordenar por año
-const filtroFecha = document.getElementById('filters__year');
-filtroFecha.addEventListener('change', () => {
-  document.getElementById("animations").innerHTML = '';
-  switch (filtroFecha.value) {
-  case '0':
-    const añoAcendente = orderFecha(arrayObjetos)
-    pintarPosters(añoAcendente)
-    break;
-  case '1':
-    const añoDesendente = orderFecha2(arrayObjetos)
-    pintarPosters(añoDesendente)
-    break;
+
+  if (this.value === 0) {
+    const dataOrdenada = orderData(arrayObjetos)
+    console.log(dataOrdenada)
+
+  } else if (this.value === 1) {
+    const dataOrdenada2 = orderData2(arrayObjetos)
+    console.log(dataOrdenada2)
 
   }
-})
 
 
 
 
-const botonDeLimpiar = document.getElementById ("clean");
-botonDeLimpiar.addEventListener("click", () =>{
-  document.getElementById("animations").innerHTML = "";// se le esta diciendo que el html quede vacio 
-  filtroFecha.value = "0"
-  filtroaz.value = "0"
-  pintarPosters((arrayObjetos));// aqui vuelvo a mostrar todas las peliculas de la pantalla 
-});
+});*/
+
 
 
 
