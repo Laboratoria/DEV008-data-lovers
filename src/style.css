@@ -1,0 +1,85 @@
+* {
+    font-family: 'Lilita One', cursive;
+    /*Letra descargada*/
+
+}
+
+header {
+    font-size: 700%;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    background-image: url(img/nuube.jpg);
+    background-repeat: no-repeat;
+    /*no se repita la imagen*/
+    background-size: cover;
+    /*cubra toda la página*/
+}
+
+.imagen {
+    width: 400px;
+    float: right;
+}
+
+.imagen1 {
+    width: 400px;
+    float: left;
+}
+
+.imagen2 {
+    width: 90px;
+    float: left;
+}
+
+.imagen3 {
+    width: 90px;
+    float: left;
+}
+
+.imagen4 {
+    width: 90px;
+    float: left;
+}
+
+.frase {
+    font-size: 250%;
+    text-align: center;
+    color: #fff;
+}
+
+.btn1 {
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #9199b8;
+    font-size: 27px;
+    padding: 19px;
+    text-decoration: none;
+}
+
+.alinear {
+    font-size: 250%;
+    text-align: left;
+    color: #fff;
+
+}
+
+.contenedorMenu {
+    float: left;
+    margin-top: 05px;
+    width: 350px;
+    height: 580px;
+}
+
+.contenedorGeneral {
+    float: right;
+    margin-top: 5px;
+    width: 1518px;
+    height: 600px;
+    text-align: center;
+    /*background-color: black;*/
+}
+
+.resultado{
+    text-align: center;
+}
