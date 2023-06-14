@@ -1,4 +1,8 @@
-import { allData, orderData, orderData2, orderFecha, orderFecha2, filtroDir, filtroProduc} from './data.js';
+//Crear un sobreescritura al html, se hace con for of;
+//Manipulación dinamica del DOM 
+//import { example } from './data.js';
+
+import { allData, orderData, orderData2, orderFecha, orderFecha2} from './data.js';
 const contenedorDePortadas = document.getElementById("animations");//para vincular el primer contenedor con el DOM
 const arrayObjetos = allData();//vinculando toda la data a al primer contenedor 
 
@@ -98,26 +102,9 @@ filtroFecha.addEventListener('change', () => {
 const filtroD = document.getElementById("filters__director");
 filtroD.addEventListener("change", () => {
   document.getElementById("animations").innerHTML = '';
-  if (filtroD.value === "all"){ //valor de la opcion igual a todos 
-    pintarPosters(arrayObjetos)
-  }else {
-    pintarPosters(filtroDir(arrayObjetos, filtroD.value))
-  }
 
-});
+})
 
-//filtro por productor
-
-const filtroP = document.getElementById("filters__producer");
-filtroP.addEventListener("change", () => {
-  document.getElementById("animations").innerHTML = '';
-  if (filtroP.value === "all"){ //valor de la opcion igual a todos 
-    pintarPosters(arrayObjetos)
-  }else {
-    pintarPosters(filtroProduc(arrayObjetos, filtroP.value))
-  }
-
-});
 
 
 
@@ -129,8 +116,6 @@ botonDeLimpiar.addEventListener("click", () =>{
   document.getElementById("animations").innerHTML = "";// se le esta diciendo que el html quede vacio 
   filtroFecha.value = "0"
   filtroaz.value = "0"
-  filtroD.value ="all"
-  filtroP.value ="all"
   pintarPosters((arrayObjetos));// aqui vuelvo a mostrar todas las peliculas de la pantalla 
 });
 

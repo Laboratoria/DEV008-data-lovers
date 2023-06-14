@@ -129,8 +129,6 @@ botonDeLimpiar.addEventListener("click", () =>{
   document.getElementById("animations").innerHTML = "";// se le esta diciendo que el html quede vacio 
   filtroFecha.value = "0"
   filtroaz.value = "0"
-  filtroD.value ="all"
-  filtroP.value ="all"
   pintarPosters((arrayObjetos));// aqui vuelvo a mostrar todas las peliculas de la pantalla 
 });
 

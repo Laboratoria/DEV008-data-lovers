@@ -82,10 +82,10 @@ const directorYoshifumiKondo = filtroDir(result, "Yoshifumi Kondō")
 export function filtroProduc(result, productorFiltro) {//esta variable es la que voy a enviar del otro lado no es la que esta arriba 
   return result.filter(item => item.producer.includes(productorFiltro));
 }
-const productorIsaoTakahata = filtroDir(result, "Isao Takahata")
-const productorToshioSuzuki = filtroDir(result, "Toshio Suzuki")
-const productorToruHara = filtroDir(result, "Toru Hara")
-const productorHayaoMiyazaki = filtroDir(result, "Hayao Miyazaki")
-const productorYoshiakiNishimura = filtroDir(result, "Yoshiaki Nishimura")
-
+const directorHayaoMiyazaki = filtroDir(result, "Hayao Miyazaki")
+const directorGoroMiyazaki = filtroDir(result, "Gorō Miyazaki")
+const directorIsaoTakahata = filtroDir(result, "Isao Takahata")
+const directorHiroyukiMorita = filtroDir(result, "Hiroyuki Morita")
+const directorHiromasaYonebayashi = filtroDir(result, "Hiromasa Yonebayashi")
+const directorYoshifumiKondo = filtroDir(result, "Yoshifumi Kondō")
 
