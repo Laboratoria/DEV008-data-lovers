@@ -142,7 +142,7 @@ button {
     text-align: center;
     font-weight: bolder;
     width:350px;
-    height: 500px;
+    height: 400px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -197,14 +197,14 @@ button {
     text-align: justify;
     font-weight: bolder;
     width: 300px;
-    height: 420px;
+    height: 220px;
     border: 2px;
     margin: auto;
     padding: 20px;
     font-size: 17px;
     margin-top: 20px;
     margin-bottom: 0px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: #484855;
     border-radius: 3px 0 0 3px;
     background-color: #3393c7bd;
@@ -216,7 +216,7 @@ button {
     text-align: center;
     font-weight: bolder;
     width: 300px;
-    height: 20px;
+    height: 75px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -234,7 +234,7 @@ button {
     text-align: center;
     font-weight: bolder;
     width: 300px;
-    height: 20px;
+    height: 75px;
     border: 2px;
     margin: auto;
     padding: 20px;
