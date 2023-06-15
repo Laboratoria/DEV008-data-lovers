@@ -6,10 +6,10 @@ import {
   filterDataProducer,
   sortDataYear,
 } from "./data.js";
-//import data from './data/ghibli/ghibli.js';
 
-const reproducer = document.getElementById("reproducer");
-//reproducer.volume = 0.05; //5% de volumen
+
+//const reproducer = document.getElementById("reproducer");
+//reproducer.volume 
 
 const cardcontainer = document.getElementById("animations");
 const allTheMovies = allData();
@@ -30,24 +30,18 @@ function showMovies(movieList) {
     title2.textContent = movie.title;
     const description2 = document.createElement("p");
     description2.textContent = movie.description;
-    const director = document.createElement("p");
-    director.textContent = movie.director;
-    const producer2 = document.createElement("p");
-    producer2.textContent = movie.producer;
     const year = document.createElement("p");
     year.textContent = movie.release_date;
 
     secondContainer.appendChild(title2); //appendchild son nodos que conectan jerarquías de padre e hijo
     secondContainer.appendChild(description2);
-    secondContainer.appendChild(director);
-    secondContainer.appendChild(producer2);
     secondContainer.appendChild(year);
 
     card.appendChild(image); //interación con DOM
     card.appendChild(secondContainer);
     cardcontainer.appendChild(card);
 
-    card.addEventListener("click", (e) => {
+    card.addEventListener("click", () => {
       //e=parametro del evento
       if (image.classList.contains("show")) {
         image.classList.add("hide");
@@ -60,12 +54,12 @@ function showMovies(movieList) {
         secondContainer.classList.remove("show");
         secondContainer.classList.add("hide");
       }
-
       //console.log(movie.title)
     });
   }
   return;
 }
+
 showMovies(allTheMovies);
 
 //filtrar por director
@@ -73,7 +67,7 @@ showMovies(allTheMovies);
 const filterXDirector = document.getElementById("filters__director");
 filterXDirector.addEventListener("change", () => {
   document.getElementById("animations").innerHTML = ""; //innerHTML y campo vacio nos ayuda a limpiar los elementos del DOM
-  if (filterXDirector.value == "all") {
+  if (filterXDirector.value === "all") {
     showMovies(allTheMovies);
   } else {
     showMovies(filterDataDirector(allTheMovies, filterXDirector.value)); //se usa allTheMovies para que funcione
@@ -84,7 +78,7 @@ filterXDirector.addEventListener("change", () => {
 const filterXProducer = document.getElementById("filters__producer");
 filterXProducer.addEventListener("change", () => {
   document.getElementById("animations").innerHTML = "";
-  if (filterXProducer.value == "all") {
+  if (filterXProducer.value === "all") {
     showMovies(allTheMovies);
   } else {
     showMovies(filterDataProducer(allTheMovies, filterXProducer.value));
@@ -92,6 +86,7 @@ filterXProducer.addEventListener("change", () => {
 });
 
 // Ordenar los años de menor a mayor y viceversa
+/* eslint-disable */
 const filterYear = document.getElementById("filters__year");
 filterYear.addEventListener("change", () => {
   document.getElementById("animations").innerHTML = "";
@@ -99,7 +94,7 @@ filterYear.addEventListener("change", () => {
     case "0":
       const moreRecent = sortDataYear(allTheMovies, 0);
       showMovies(moreRecent);
-      break;
+      break;  //Al encontrar un "break", no será ejecutado el case 1:'
     case "1":
       const older = sortDataYear(allTheMovies, 1);
       showMovies(older);
@@ -107,13 +102,11 @@ filterYear.addEventListener("change", () => {
   }
 });
 
+
 const btnClean = document.getElementById("clean");
-btnClean.addEventListener("click", (e) => {
-  //e=parametro del evento
-  e.preventDefault(); //si no hay evento explicito(¿bien definido?) en el parametro te marcara un error
-  filterXDirector.value = "all";
-  filterXProducer.value = "all";
-  filterYear.value = "all";
-  //seguir evaluando
+btnClean.addEventListener("click", () => {
+document.getElementById("animations").innerHTML = ""
+if ( filterXDirector != "all" || filterXProducer != "all" || filterYear != "all")
   showMovies(allTheMovies);
+
 });

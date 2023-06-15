@@ -1,14 +1,6 @@
 import data from "./data/ghibli/ghibli.js";
 // estas funciones son de ejemplo (funciones de ordenar, etc describe comportamiento de main.js)
 
-export const example = () => {
-  return "example";
-};
-
-export const anotherExample = () => {
-  return "OMG";
-};
-
 export function allData() {
   //función que toma la informacion de la data
   return data.films;
@@ -20,7 +12,7 @@ export const filterDataDirector = (data, nameDirector) => {
     return [];
   }
   const newDataDirector = data.filter(
-    (movie) => movie.director == nameDirector
+    (movie) => movie.director === nameDirector
   );
   return newDataDirector;
 };
@@ -28,7 +20,7 @@ export const filterDataDirector = (data, nameDirector) => {
 //filtro por productor
 export const filterDataProducer = (data, nameProducer) => {
   const newDataProducer = data.filter(
-    (movie) => movie.producer == nameProducer
+    (movie) => movie.producer === nameProducer
   );
   return newDataProducer;
 };
@@ -44,14 +36,3 @@ export const sortDataYear = (data, key) => {
   });
   return dataYear;
 };
-
-//constante para hacer referencia a la funcion de tomar la data (alldata)
-const result = allData();
-
-//console.log(result);
-
-//function tarjetas ()
-//const dataStudioGhibli = data.films;   {}
-//const displayCardGhibli = (ghibliData) => {}
-//ghibliData.forEach(arr) => {}
-//¿cómo visualizar los "posters"?
