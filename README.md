@@ -28,9 +28,27 @@ El proceso de diseño se realizó pensando en diferentes casos(historias de usua
 **Diseño de la Interfaz de Usuario**
 Se pensó en colores agradables a la vista, un tamaño visualmente aceptable. Se realizó un prototipo de baja fidelidad en papel y uno de alta fidelidad usando Figma.
 
+![Alt text](img/Peliculas%20Ghibli/principal1.png)
+![Alt text](img/Peliculas%20Ghibli/principal2.png)
+![Alt text](img/Peliculas%20Ghibli/principal3.png)
+![Alt text](img/Peliculas%20Ghibli/principal4.png)
+
 ***Prototipo de baja fidelidad***
 
+![Alt text](img/Peliculas%20Ghibli/baja1.jpg)
+![Alt text](img/Peliculas%20Ghibli/baja2.jpg)
+![Alt text](img/Peliculas%20Ghibli/baja3.jpg)
+![Alt text](img/Peliculas%20Ghibli/baja4.jpg)
+![Alt text](img/Peliculas%20Ghibli/baja5.jpg)
+![Alt text](img/Peliculas%20Ghibli/baja6.jpg)
+
 ***Prototipo de alta fidelidad***
+
+![Alt text](img/Peliculas%20Ghibli/alta2.png)
+![Alt text](img/Peliculas%20Ghibli/alta1.png)
+![Alt text](img/Peliculas%20Ghibli/alta3.png)
+![Alt text](img/Peliculas%20Ghibli/alta4.png)
+![Alt text](img/Peliculas%20Ghibli/alta6.png)
 
 **Historias de usuario**
 
