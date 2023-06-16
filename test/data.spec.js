@@ -130,8 +130,26 @@ describe("Casos de prueba para la funcion de filtrado de fecha", () => {
         rt_score: "89",
       },
     ];
-    const release_date = "2002";
-    expect(sortDataYear(peliculas, release_date)).toEqual([
+    const isAscendent = true;
+    expect(sortDataYear(peliculas, isAscendent)).toEqual([
+      {
+        title: "Castle in the Sky",
+        producer: "Isao Takahata",
+        release_date: "1986",
+        rt_score: "95",
+      },
+      {
+        title: "My Neighbor Totoro",
+        producer: "Hayao Miyazaki",
+        release_date: "1988",
+        rt_score: "93",
+      },
+      {
+        title: "Only Yesterday",
+        producer: "Toshio Suzuki",
+        release_date: "1991",
+        rt_score: "100",
+      },
       {
         title: "The Cat Returns",
         producer: "Toshio Suzuki",

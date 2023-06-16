@@ -8,8 +8,8 @@ import {
 } from "./data.js";
 
 
-//const reproducer = document.getElementById("reproducer");
-//reproducer.volume 
+const reproducer = document.getElementById("music");
+//reproducer.volume=0.3;
 
 const cardcontainer = document.getElementById("animations");
 const allTheMovies = allData();
@@ -26,7 +26,7 @@ function showMovies(movieList) {
     const secondContainer = document.createElement("div");
     secondContainer.classList.add("card");
     secondContainer.classList.add("hide");
-    const title2 = document.createElement("p");
+    const title2 = document.createElement("h4");
     title2.textContent = movie.title;
     const description2 = document.createElement("p");
     description2.textContent = movie.description;

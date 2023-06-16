@@ -26,12 +26,12 @@ export const filterDataProducer = (data, nameProducer) => {
 };
 
 //filtro por año ascendente y descendnte
-export const sortDataYear = (data, key) => {
+export const sortDataYear = (data, isAscendent) => {
   const dataYear = data.sort((a, b) => {
-    if (key === 0) {
-      return b.release_date - a.release_date;
-    } else {
+    if (isAscendent) {
       return a.release_date - b.release_date;
+    } else {
+      return b.release_date - a.release_date;
     }
   });
   return dataYear;
