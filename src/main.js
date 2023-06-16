@@ -9,7 +9,7 @@ import {
 
 
 const reproducer = document.getElementById("music");
-//reproducer.volume=0.3;
+reproducer.volume;
 
 const cardcontainer = document.getElementById("animations");
 const allTheMovies = allData();
