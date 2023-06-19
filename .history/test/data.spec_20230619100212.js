@@ -25,7 +25,7 @@ describe('orderData', () => {
     {title: "When Marnie Was There"},
   ];
   it('return title',  () => { //le decimos que va a ser 
-    expect(orderData("title a-z", orderDataTest)).toEqual( [
+    expect(orderData("title", orderDataTest)).toEqual( [
       {title: "Castle in the Sky"},
       {title: "From Up on Poppy Hill"},
       {title: "Grave of the Fireflies"},
@@ -50,7 +50,7 @@ describe('orderData', () => {
     ]);
   });
   it('return title',  () => { //le decimos que va a ser 
-    expect(orderData("title z-a", orderDataTest)).toEqual( [
+    expect(orderData("title", orderDataTest)).toEqual( [
       {title: "Whisper of the Heart"},
       {title: "When Marnie Was There"},
       {title: "The Wind Rises"},

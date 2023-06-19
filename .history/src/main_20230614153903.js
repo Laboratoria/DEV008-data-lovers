@@ -18,13 +18,13 @@ function pintarPosters(listaDePeliculas) { //estoy pintando los posters para eso
     titulo.innerText = pelis.title;
     titulo.classList.add("soloTitulo")
 
-    const ano = document.createElement("p")
-    ano.innerText = pelis.release_date;
-    ano.classList.add("soloAno")
+    const año = document.createElement("p")
+    año.innerText = pelis.release_date;
+    año.classList.add("soloAño")
 
     caja.appendChild(posters);//appendChild hace la magia "interaccion con el DOM"
     caja.appendChild(titulo);
-    caja.appendChild(ano);
+    caja.appendChild(año);
     document.getElementById("animations").appendChild(caja);
 
   
@@ -65,7 +65,7 @@ filtroaz.addEventListener('change', () => {
   switch (filtroaz.value) {
   case '0':
     const az = orderData(arrayObjetos)
-    pintarPosters(za)
+    pintarPosters(az)
     break;
   case '1':
     const za = orderData2(arrayObjetos)
@@ -82,12 +82,12 @@ filtroFecha.addEventListener('change', () => {
   document.getElementById("animations").innerHTML = '';
   switch (filtroFecha.value) {
   case '0':
-    const anoAcendente = orderFecha(arrayObjetos)
-    pintarPosters(anoAcendente)
+    const añoAcendente = orderFecha(arrayObjetos)
+    pintarPosters(añoAcendente)
     break;
   case '1':
-    const anoDesendente = orderFecha2(arrayObjetos)
-    pintarPosters(anoDesendente)
+    const añoDesendente = orderFecha2(arrayObjetos)
+    pintarPosters(añoDesendente)
     break;
 
   }

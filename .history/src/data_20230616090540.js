@@ -5,8 +5,8 @@ export function allData() { //función que toma la informacion de la data
 }
 
 //constante para hacer referencia a la funcion de tomar la data (alldata)
-//const result = allData();
-//console.log(result);
+const result = allData();
+console.log(result);
 
 //esto es para ordenar la data, entoces te  da tres posibilidades 
 //1. < 0 .... entonces pondra primero a

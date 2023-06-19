@@ -24,53 +24,24 @@ describe('orderData', () => {
     {title: "The Tale of the Princess Kaguya"},
     {title: "When Marnie Was There"},
   ];
-  it('return title',  () => { //le decimos que va a ser 
-    expect(orderData("title a-z", orderDataTest)).toEqual( [
-      {title: "Castle in the Sky"},
-      {title: "From Up on Poppy Hill"},
-      {title: "Grave of the Fireflies"},
-      {title: "Howl's Moving Castle"},
-      {title: "Kiki's Delivery Service"},
-      {title: "My Neighbor Totoro"},
-      {title: "My Neighbors the Yamadas"},
-      {title: "Only Yesterday"},
-      {title: "Pom Poko"},
-      {title: "Ponyo on the Cliff by the Sea"},
-      {title: "Porco Rosso"},
-      {title: "Princess Mononoke"},
-      {title: "Spirited Away"},
-      {title: "Tales from Earthsea"},
-      {title: "The Cat Returns"},
-      {title: "The Secret World of Arrietty"},
-      {title: "The Tale of the Princess Kaguya"},
-      {title: "The Wind Rises"},
-      {title: "When Marnie Was There"},
-      {title: "Whisper of the Heart"},
-      
+  it('return director',  () => { //le decimos que va a ser 
+    expect(filtroDir("director", orderDataTest)).toEqual( [
+      {director: "Hayao Miyazaki"},
+      {director: "Gorō Miyazaki"},
+      {director: "Isao Takahata"},
+      {director: "Hiroyuki Morita"},
+      {director: "Hiromasa Yonebayashi"},
+      {director: "Yoshifumi Kondō"},
     ]);
   });
-  it('return title',  () => { //le decimos que va a ser 
-    expect(orderData("title z-a", orderDataTest)).toEqual( [
-      {title: "Whisper of the Heart"},
-      {title: "When Marnie Was There"},
-      {title: "The Wind Rises"},
-      {title: "The Tale of the Princess Kaguya"},
-      {title: "The Secret World of Arrietty"},
-      {title: "The Cat Returns"},
-      {title: "Tales from Earthsea"},
-      {title: "Spirited Away"},
-      {title: "Princess Mononoke"},
-      {title: "Porco Rosso"},
-      {title: "Ponyo on the Cliff by the Sea"},
-      {title: "Pom Poko"},
-      {title: "Only Yesterday"},
-      {title: "My Neighbors the Yamadas"},
-      {title: "My Neighbor Totoro"},
-      {title: "Kiki's Delivery Service"},
-      {title: "Howl's Moving Castle"},
-      {title: "Grave of the Fireflies"},
-      {title: "From Up on Poppy Hill"},
-      {title: "Castle in the Sky"},
+  it('return director',  () => { //le decimos que va a ser 
+    expect(filtroDir("director", orderDataTest)).toEqual( [
+      {director: "Yoshifumi Kondō"},
+      {director: "Hiromasa Yonebayashi"},
+      {director: "Hayao Miyazaki"},
+      {director: "Gorō Miyazaki"},
+      {director: "Isao Takahata"},
+      {director: "Hiroyuki Morita"},
     ]);
   });
 });
