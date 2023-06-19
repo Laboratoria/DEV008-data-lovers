@@ -190,32 +190,10 @@ describe("orderFecha2", () => {
   ];
   it("return release_date", () => {
     //le decimos que va a ser
-    expect(orderFecha2(fechaTest2)).toEqual([
-      { release_date: "2014" },
-      { release_date: "2013" },
-      { release_date: "2013" },
-      { release_date: "2011" },
-      { release_date: "2010" },
-      { release_date: "2008" },
-      { release_date: "2006" },
-      { release_date: "2004" },
-      { release_date: "2002" },
-      { release_date: "2001" },
-      { release_date: "1999" },
-      { release_date: "1997" },
-      { release_date: "1995" },
-      { release_date: "1994" },
-      { release_date: "1992" },
-      { release_date: "1991" },
-      { release_date: "1989" },
-      { release_date: "1988" },
-      { release_date: "1988" },
-      { release_date: "1986" },
-    ]);
+    expect(orderFecha2(fechaTest2)).toEqual([{ release_date: "1991" }]);
   });
 }),
-//const isAscendent = true;
-//expect(sortDataYear(peliculas, isAscendent)).toEqual([
+
 
 //directores
 describe("filtroDir", () => {

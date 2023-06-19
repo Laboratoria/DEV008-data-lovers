@@ -1,5 +1,5 @@
 import { allData, orderData, orderData2, orderFecha, orderFecha2, filtroDir, filtroProduc} from './data.js';
-//const contenedorDePortadas = document.getElementById("animations");//para vincular el primer contenedor con el DOM
+const contenedorDePortadas = document.getElementById("animations");//para vincular el primer contenedor con el DOM
 const arrayObjetos = allData();//vinculando toda la data a al primer contenedor 
 
 
@@ -63,14 +63,14 @@ const filtroaz = document.getElementById('filters__initial');
 filtroaz.addEventListener('change', () => {
   document.getElementById("animations").innerHTML = '';
   switch (filtroaz.value) {
-  case '0':{
+  case '0':
     const az = orderData(arrayObjetos)
-    pintarPosters(az)
-    break;}
-  case '1': {
+    pintarPosters(za)
+    break;
+  case '1':
     const za = orderData2(arrayObjetos)
     pintarPosters(za)
-    break;}
+    break;
 
   }
 })
@@ -81,14 +81,14 @@ const filtroFecha = document.getElementById('filters__year');
 filtroFecha.addEventListener('change', () => {
   document.getElementById("animations").innerHTML = '';
   switch (filtroFecha.value) {
-  case '0':{
+  case '0':
     const anoAcendente = orderFecha(arrayObjetos)
     pintarPosters(anoAcendente)
-    break;}
-  case '1':{
+    break;
+  case '1':
     const anoDesendente = orderFecha2(arrayObjetos)
     pintarPosters(anoDesendente)
-    break;}
+    break;
 
   }
 })

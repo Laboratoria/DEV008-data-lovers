@@ -81,14 +81,14 @@ const filtroFecha = document.getElementById('filters__year');
 filtroFecha.addEventListener('change', () => {
   document.getElementById("animations").innerHTML = '';
   switch (filtroFecha.value) {
-  case '0':{
+  case '0':
     const anoAcendente = orderFecha(arrayObjetos)
     pintarPosters(anoAcendente)
-    break;}
-  case '1':{
+    break;
+  case '1':
     const anoDesendente = orderFecha2(arrayObjetos)
     pintarPosters(anoDesendente)
-    break;}
+    break;
 
   }
 })
