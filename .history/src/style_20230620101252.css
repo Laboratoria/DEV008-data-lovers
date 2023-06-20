@@ -1,7 +1,6 @@
 body {
+    display: flex;
     background-image: url(fondo.jpg);
-    background-repeat: space;
-    background-color: black;
 }
 
 h1 {
@@ -73,8 +72,7 @@ h3 {
 }
 
 
-a { 
-    display: flex; 
+a { display: flex;
     color: beige;
     font-family: monospace;
     text-decoration: double;
@@ -83,7 +81,7 @@ a {
 }
 
 .container {
-    display: flex; 
+    display: flex;
     width: 90%;
     margin: auto;
 }
@@ -91,7 +89,6 @@ a {
 /* Navegación*/
 
 ul {
-    display: flex;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
@@ -102,7 +99,6 @@ ul {
 
 
 footer {
-    display: flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 13px;
     border-color: black;

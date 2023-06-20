@@ -35,6 +35,7 @@ h2 {
 }
 
 .filters__director {
+    display: flex;
     width: 250px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
@@ -131,17 +132,18 @@ button {
 .animations {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    flex-direction: column;
-    /*flex-wrap: wrap;*/
+    /* flex-direction: row;
+    flex-wrap: wrap;*/
     grid-column-gap: 20px;
     align-content: center;
-    }
+    /* order: 5;*/
+}
 
 
 .soloPosters {
     text-align: center;
     font-weight: bolder;
-    width:250px;
+    width:150px;
     height: 300px;
     border: 2px;
     margin: auto;
@@ -153,7 +155,7 @@ button {
 
 .soloTitulo {
     
-    width: 280px;
+    width: 380px;
     height: 20px;
     font-weight: bold;
     margin: 5px;
@@ -172,7 +174,7 @@ button {
 
 .soloAno {
 
-    width: 280px;
+    width: 380px;
     height: 20px;
     font-weight: bold;
     margin: 5px;
@@ -196,8 +198,8 @@ button {
 
     text-align: justify;
     font-weight: bolder;
-    width: 500px;
-    height: 220px;
+    width: 300px;
+    height: 420px;
     border: 2px;
     margin: auto;
     padding: 20px;
@@ -215,7 +217,7 @@ button {
 
     text-align: center;
     font-weight: bolder;
-    width: 500px;
+    width: 300px;
     height: 20px;
     border: 2px;
     margin: auto;
@@ -233,7 +235,7 @@ button {
 
     text-align: center;
     font-weight: bolder;
-    width: 500px;
+    width: 300px;
     height: 20px;
     border: 2px;
     margin: auto;

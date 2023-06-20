@@ -1,11 +1,10 @@
 body {
+    @media only screen and (max-width: auto) 
     background-image: url(fondo.jpg);
-    background-repeat: space;
-    background-color: black;
 }
 
 h1 {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     text-transform: uppercase;
     letter-spacing: .1em;
     display: inline-block;
@@ -48,7 +47,7 @@ h1 {
 }
 
 h2 {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     font-weight: bolder;
@@ -61,7 +60,7 @@ h2 {
 }
 
 h3 {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     font-family: Arial, sans-serif;
     font-size: 17px;
     font-weight: bolder;
@@ -74,7 +73,7 @@ h3 {
 
 
 a { 
-    display: flex; 
+    @media only screen and (max-width: 600px) 
     color: beige;
     font-family: monospace;
     text-decoration: double;
@@ -83,7 +82,7 @@ a {
 }
 
 .container {
-    display: flex; 
+    @media only screen and (max-width: 600px) 
     width: 90%;
     margin: auto;
 }
@@ -91,7 +90,7 @@ a {
 /* Navegación*/
 
 ul {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     font-size: 17px;
     display: flex;
     justify-content: space-between;
@@ -102,7 +101,7 @@ ul {
 
 
 footer {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 13px;
     border-color: black;

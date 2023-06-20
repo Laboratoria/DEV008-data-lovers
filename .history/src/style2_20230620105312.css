@@ -129,8 +129,8 @@ button {
 }
 
 .animations {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto;*/
     flex-direction: column;
     /*flex-wrap: wrap;*/
     grid-column-gap: 20px;

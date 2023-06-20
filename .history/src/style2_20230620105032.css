@@ -131,8 +131,8 @@ button {
 .animations {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    flex-direction: column;
-    /*flex-wrap: wrap;*/
+    /* flex-direction: row;
+    flex-wrap: wrap;*/
     grid-column-gap: 20px;
     align-content: center;
     }
@@ -196,7 +196,7 @@ button {
 
     text-align: justify;
     font-weight: bolder;
-    width: 500px;
+    width: 500px
     height: 220px;
     border: 2px;
     margin: auto;
@@ -215,7 +215,7 @@ button {
 
     text-align: center;
     font-weight: bolder;
-    width: 500px;
+    width: 300px;
     height: 20px;
     border: 2px;
     margin: auto;
@@ -233,7 +233,7 @@ button {
 
     text-align: center;
     font-weight: bolder;
-    width: 500px;
+    width: 300px;
     height: 20px;
     border: 2px;
     margin: auto;

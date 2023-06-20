@@ -1,7 +1,6 @@
 body {
     background-image: url(fondo.jpg);
-    background-repeat: space;
-    background-color: black;
+background-repeat: initial;
 }
 
 h1 {
@@ -102,7 +101,7 @@ ul {
 
 
 footer {
-    display: flex;
+    @media only screen and (max-width: 600px) 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 13px;
     border-color: black;
