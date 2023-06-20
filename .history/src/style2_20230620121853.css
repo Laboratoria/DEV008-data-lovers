@@ -1,10 +1,13 @@
 body {
+    
     display: flex;
     background-color:rgb(152, 180, 172);
+    /*@media (max-width:250px)*/
 }
 
 h2 {
-    display: flex;
+    
+    di@media (max-width:250px)splay: flex;
     justify-content: center;
     align-items: center;
     background-color: tomato;
@@ -19,9 +22,11 @@ h2 {
     letter-spacing: 2px;
     border: 1px solid black(0, 100, 200);
     border-radius: 10px;
+    /*@media (max-width:250px)*/
 }
 
 .filters {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,11 +35,12 @@ h2 {
     padding: 15px;
     border: 1px solid black(0, 170, 255);
     background-color: rgba(86, 143, 200, 0.949);
-
+    @media (max-width:600px)
 
 }
 
 .filters__director {
+    @media (max-width:250px)
     width: 250px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
@@ -55,6 +61,7 @@ h2 {
 }
 
 .filters__producer {
+    @media (max-width:250px)
     width: 250px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
@@ -191,8 +198,6 @@ button {
 }
 
 
-/*@media screen and (max-width:400px) {*/
-    
 
 .soloDescripcion {
 
@@ -251,7 +256,7 @@ button {
 
 }
 
-/*}*/
+
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 10px;

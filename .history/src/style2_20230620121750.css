@@ -1,9 +1,11 @@
 body {
+    /*@media (max-width 600 px)*/
     display: flex;
     background-color:rgb(152, 180, 172);
 }
 
 h2 {
+    /*@media (max-width 600 px)*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +24,7 @@ h2 {
 }
 
 .filters {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,11 +33,12 @@ h2 {
     padding: 15px;
     border: 1px solid black(0, 170, 255);
     background-color: rgba(86, 143, 200, 0.949);
-
+@media (max-width:600px)
 
 }
 
 .filters__director {
+    @media (max-width:250px)
     width: 250px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
@@ -55,6 +59,7 @@ h2 {
 }
 
 .filters__producer {
+    @media (max-width:250px)
     width: 250px;
     height: 50px;
     border: 2px solid black(0, 170, 255);
@@ -191,8 +196,6 @@ button {
 }
 
 
-/*@media screen and (max-width:400px) {*/
-    
 
 .soloDescripcion {
 
@@ -251,7 +254,7 @@ button {
 
 }
 
-/*}*/
+
 footer {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 10px;
