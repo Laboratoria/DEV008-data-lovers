@@ -1,0 +1,25 @@
+body {
+    background-image: url(fondo2.jpg);
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    border-color: black;
+    background-color: black;
+    color: beige;
+    position: absolute;
+    bottom: 0%;
+}

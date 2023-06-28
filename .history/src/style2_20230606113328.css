@@ -1,0 +1,39 @@
+body {
+    background-image: url(fondo2.jpg);
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.filters{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  width: 120px;
+  height: 120px;
+  border: 1px solid black(0, 170, 255);
+  background-color: rgb(86, 143, 200);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    border-color: black;
+    background-color: black;
+    color: beige;
+    position: absolute;
+    bottom: 0%;
+}

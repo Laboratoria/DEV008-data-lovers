@@ -1,0 +1,113 @@
+body {
+    width: 200%;
+    background-image: url(fondo.jpg);
+    background-repeat: inherit;
+}
+
+h1 {
+    @media only screen and (max-width: 600px) 
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: inline-block;
+    border: 1px double rgba(255, 255, 255, .25);
+    border-width: 1px 0;
+    padding: -5em 0em;
+    position: absolute;
+    top: 02%;
+    left: 50%;
+    width: 40em;
+    margin: 0 0 0 -20em;
+    /* Clip Background Image */
+
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+h2 {
+    @media only screen and (max-width: 600px) 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: beige;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+h3 {
+    @media only screen and (max-width: 600px) 
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(34, 151, 189);
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 200%;
+}
+
+
+a { 
+    @media only screen and (max-width: 600px) 
+    color: beige;
+    font-family: monospace;
+    text-decoration: double;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.container {
+    @media only screen and (max-width: 600px) 
+    width: 90%;
+    margin: auto;
+}
+
+/* Navegación*/
+
+ul {
+    @media only screen and (max-width: 600px) 
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+footer {
+    @media only screen and (max-width: 600px) 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    border-color: black;
+    background-color: black;
+    color: beige;
+    position: absolute;
+    bottom: 0%;
+}
