@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Peliculas y colaboradores</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <main id="main__animations" class="main__animations">
+    <h2 id="animationsTitle">Peliculas y colaboradores</h2>
+    <div class="main__filtersAndCount">
+      <!--contador de peliculas-->
+      <p id="countFilms" class="countFilms"></p>
+      <div class="filters">
+        <select id="filters__director" class="filters__director">
+          <option selected value="all">Director</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Gorō Miyazaki">Goro Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+        </select>
+        <select id="filters__producer" class="filters__producer">
+          <option selected value="all">Productor</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Toshio Suzuki">Toshio Suzuki</option>
+          <option value="Toru Hara">Toru Hara</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+        </select>
+        <select id="filters__initial" class="filters__initial">
+          <option value="0">A-Z</option>
+          <option value="1">Z-A </option>
+        </select>
+        <select id="filters__year" class="filters__year">
+          <option value="0">Primeras</option>
+          <option value="1">Ultimas</option>
+        </select>
+        <button type="reset" id="clean">Limpiar filtros</button>
+    </div>
+    </div>
+    <div>
+       <section class="animations" id="animations"></section></div> <!-- Se crean las tarjetas de forma dinamica -->
+    
+  
+  <footer>Creado por Alejandra Paola Méndez Alcantara, Laboratoria 2023</footer>
+  <div id="root"></div>
+ <script src="main.js" type="module"></script></main></body>
+
+
+</html>
